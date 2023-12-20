@@ -62,21 +62,21 @@ static Il2CppMethodPointer s_methodPointers[15] =
 };
 static const int32_t s_InvokerIndices[15] = 
 {
-	4314,
-	7580,
-	4337,
-	7580,
-	9453,
-	9453,
-	9453,
-	9241,
-	9302,
-	9453,
-	9453,
-	9453,
-	9453,
-	9453,
-	14195,
+	4348,
+	7635,
+	4371,
+	7635,
+	9524,
+	9524,
+	9524,
+	9310,
+	9372,
+	9524,
+	9524,
+	9524,
+	9524,
+	9524,
+	14360,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Meta_Voice_Samples_Shapes_CodeGenModule;
 const Il2CppCodeGenModule g_Meta_Voice_Samples_Shapes_CodeGenModule = 

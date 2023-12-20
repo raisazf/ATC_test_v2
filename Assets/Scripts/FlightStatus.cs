@@ -5,9 +5,7 @@ using UnityEngine;
 public class FlightStatus : MonoBehaviour
 {
     public string reg_number;
-    public string manufacturer;
     public string airline;
-    public int flight_number;
     public float lat;
     public float lng;
     public float alt;

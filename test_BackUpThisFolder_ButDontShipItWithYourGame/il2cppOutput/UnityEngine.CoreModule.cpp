@@ -5261,6 +5261,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Quaternion_ToString_mC5BD5DEF60FCA4
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UnityString_Format_m98A0629641086A1BE20BBF7F4EADDE3FE3877D85 (String_t* ___fmt0, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___args1, const RuntimeMethod* method) ;
 // System.String UnityEngine.Pose::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Pose_ToString_m4F33190911B86A9B72CA59D6AF3C633569CDE6D2 (Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* __this, const RuntimeMethod* method) ;
+// System.String UnityEngine.Vector3::ToString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Vector3_ToString_m3185BD544ED9BA81E88936544EC298C19207BDF1 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, String_t* ___format0, const RuntimeMethod* method) ;
+// System.String UnityEngine.Quaternion::ToString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Quaternion_ToString_m57FD902CB5D5FDE30866C169033515B5330B3C5F (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* __this, String_t* ___format0, const RuntimeMethod* method) ;
+// System.String UnityEngine.Pose::ToString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Pose_ToString_m8C3203B81EB15980F16E07C63B6FBBEECE50A6EF (Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* __this, String_t* ___format0, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Quaternion::op_Multiply(UnityEngine.Quaternion,UnityEngine.Vector3)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___rotation0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___point1, const RuntimeMethod* method) ;
 // UnityEngine.Quaternion UnityEngine.Quaternion::op_Multiply(UnityEngine.Quaternion,UnityEngine.Quaternion)
@@ -14104,6 +14110,56 @@ IL2CPP_EXTERN_C  String_t* Pose_ToString_m4F33190911B86A9B72CA59D6AF3C633569CDE6
 	_thisAdjusted = reinterpret_cast<Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971*>(__this + _offset);
 	String_t* _returnValue;
 	_returnValue = Pose_ToString_m4F33190911B86A9B72CA59D6AF3C633569CDE6D2(_thisAdjusted, method);
+	return _returnValue;
+}
+// System.String UnityEngine.Pose::ToString(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Pose_ToString_m8C3203B81EB15980F16E07C63B6FBBEECE50A6EF (Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* __this, String_t* ___format0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDBD8760F0E4E49A1C274D51CE66C3AF4D4F6DD1D);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	{
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_0 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)2);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = L_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2 = (&__this->___position_0);
+		String_t* L_3 = ___format0;
+		String_t* L_4;
+		L_4 = Vector3_ToString_m3185BD544ED9BA81E88936544EC298C19207BDF1(L_2, L_3, NULL);
+		NullCheck(L_1);
+		ArrayElementTypeCheck (L_1, L_4);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_4);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_5 = L_1;
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974* L_6 = (&__this->___rotation_1);
+		String_t* L_7 = ___format0;
+		String_t* L_8;
+		L_8 = Quaternion_ToString_m57FD902CB5D5FDE30866C169033515B5330B3C5F(L_6, L_7, NULL);
+		NullCheck(L_5);
+		ArrayElementTypeCheck (L_5, L_8);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject*)L_8);
+		String_t* L_9;
+		L_9 = UnityString_Format_m98A0629641086A1BE20BBF7F4EADDE3FE3877D85(_stringLiteralDBD8760F0E4E49A1C274D51CE66C3AF4D4F6DD1D, L_5, NULL);
+		V_0 = L_9;
+		goto IL_0032;
+	}
+
+IL_0032:
+	{
+		String_t* L_10 = V_0;
+		return L_10;
+	}
+}
+IL2CPP_EXTERN_C  String_t* Pose_ToString_m8C3203B81EB15980F16E07C63B6FBBEECE50A6EF_AdjustorThunk (RuntimeObject* __this, String_t* ___format0, const RuntimeMethod* method)
+{
+	Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971*>(__this + _offset);
+	String_t* _returnValue;
+	_returnValue = Pose_ToString_m8C3203B81EB15980F16E07C63B6FBBEECE50A6EF(_thisAdjusted, ___format0, method);
 	return _returnValue;
 }
 // UnityEngine.Pose UnityEngine.Pose::GetTransformedBy(UnityEngine.Pose)

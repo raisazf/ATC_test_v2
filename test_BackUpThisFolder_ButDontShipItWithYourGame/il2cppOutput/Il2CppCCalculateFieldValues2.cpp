@@ -10389,6 +10389,10 @@ struct CreateAssetMenuAttribute_tDF668493A973633E6641C8FD2673DAE205126E9E  : pub
 {
 	// System.String UnityEngine.CreateAssetMenuAttribute::<menuName>k__BackingField
 	String_t* ___U3CmenuNameU3Ek__BackingField_0;
+	// System.String UnityEngine.CreateAssetMenuAttribute::<fileName>k__BackingField
+	String_t* ___U3CfileNameU3Ek__BackingField_1;
+	// System.Int32 UnityEngine.CreateAssetMenuAttribute::<order>k__BackingField
+	int32_t ___U3CorderU3Ek__BackingField_2;
 };
 
 // System.Linq.Expressions.Interpreter.CreateDelegateInstruction
@@ -36557,9 +36561,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8391[3] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8392[2] = 
 {
 	static_cast<int32_t>(offsetof(AddComponentMenu_t2CAC9731E6207441D8707972D8A021AC5DF78DF3, ___m_AddComponentMenu_0)),static_cast<int32_t>(offsetof(AddComponentMenu_t2CAC9731E6207441D8707972D8A021AC5DF78DF3, ___m_Ordering_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8393[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8393[3] = 
 {
-	static_cast<int32_t>(offsetof(CreateAssetMenuAttribute_tDF668493A973633E6641C8FD2673DAE205126E9E, ___U3CmenuNameU3Ek__BackingField_0)),};
+	static_cast<int32_t>(offsetof(CreateAssetMenuAttribute_tDF668493A973633E6641C8FD2673DAE205126E9E, ___U3CmenuNameU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(CreateAssetMenuAttribute_tDF668493A973633E6641C8FD2673DAE205126E9E, ___U3CfileNameU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(CreateAssetMenuAttribute_tDF668493A973633E6641C8FD2673DAE205126E9E, ___U3CorderU3Ek__BackingField_2)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8398[3] = 
 {
 	static_cast<int32_t>(offsetof(HelpURLAttribute_tC499F826613B34E001AEAE5D42BA2B3AD365E91D, ___m_Url_0)),static_cast<int32_t>(offsetof(HelpURLAttribute_tC499F826613B34E001AEAE5D42BA2B3AD365E91D, ___m_Dispatcher_1)),static_cast<int32_t>(offsetof(HelpURLAttribute_tC499F826613B34E001AEAE5D42BA2B3AD365E91D, ___m_DispatchingFieldName_2)),};
@@ -37070,399 +37074,396 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8625[5] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8627[5] = 
 {
 	static_cast<int32_t>(offsetof(PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F, ___type_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F, ___subSystemList_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F, ___updateDelegate_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F, ___updateFunction_3)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(PlayerLoopSystem_t8AED6BF1C8A309CAA6FF71AC91DD33BDDFF7CF1F, ___loopConditionFunction_4)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8762[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8763[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t9909632E27B9F1D1A060845D24FDCBED135D4A61_StaticFields, ___39D974909C7E64675317DD1A8583B8D8DE92E68B180532FADD22B482AD93DC83_0)),static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t9909632E27B9F1D1A060845D24FDCBED135D4A61_StaticFields, ___C77A066B9EC0272B121AD30CBAEDA4AD20F986D49CC6D0007EBF45888D8B09BF_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8768[1] = 
-{
-	static_cast<int32_t>(offsetof(NullableAttribute_t15601AB01B513D4580D95DED571DF3FBB59E2CBB, ___NullableFlags_0)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8769[1] = 
 {
-	static_cast<int32_t>(offsetof(NullableContextAttribute_t5C3B8570E3EB73A7BBB56046328E13399D208591, ___Flag_0)),};
+	static_cast<int32_t>(offsetof(NullableAttribute_t15601AB01B513D4580D95DED571DF3FBB59E2CBB, ___NullableFlags_0)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8770[1] = 
 {
+	static_cast<int32_t>(offsetof(NullableContextAttribute_t5C3B8570E3EB73A7BBB56046328E13399D208591, ___Flag_0)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8771[1] = 
+{
 	static_cast<int32_t>(offsetof(NullablePublicOnlyAttribute_tAD00DA01F51C38CDC4DDC2E96242F466FA87AEA5, ___IncludesInternals_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8772[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8773[1] = 
 {
 	static_cast<int32_t>(offsetof(RefSafetyRulesAttribute_t356624DF5A06E1C82B40102CA7A0C8EB6CA39765, ___Version_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8775[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8776[2] = 
 {
 	static_cast<int32_t>(offsetof(SR_t6DCD41CF50D2C0E133584D8610EA913A5B5445CA_StaticFields, ___s_usingResourceKeys_0)),static_cast<int32_t>(offsetof(SR_t6DCD41CF50D2C0E133584D8610EA913A5B5445CA_StaticFields, ___s_resourceManager_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8776[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8777[4] = 
 {
 	static_cast<int32_t>(offsetof(ObsoleteAttribute_t42892AE3F49E95A5EE102145B0A781139D946280, ___U3CMessageU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(ObsoleteAttribute_t42892AE3F49E95A5EE102145B0A781139D946280, ___U3CIsErrorU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(ObsoleteAttribute_t42892AE3F49E95A5EE102145B0A781139D946280, ___U3CDiagnosticIdU3Ek__BackingField_2)),static_cast<int32_t>(offsetof(ObsoleteAttribute_t42892AE3F49E95A5EE102145B0A781139D946280, ___U3CUrlFormatU3Ek__BackingField_3)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8777[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8778[1] = 
 {
 	static_cast<int32_t>(offsetof(DynamicallyAccessedMembersAttribute_t910AF2C776ECA47B32DCAC602C635B8D57CE845D, ___U3CMemberTypesU3Ek__BackingField_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8778[17] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8779[17] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8779[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8780[1] = 
 {
 	static_cast<int32_t>(offsetof(RequiresUnreferencedCodeAttribute_t8BA8F9B026DE6AECDC1B68B8E3EDCDF274C0555D, ___U3CMessageU3Ek__BackingField_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8780[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8781[3] = 
 {
 	static_cast<int32_t>(offsetof(UnconditionalSuppressMessageAttribute_t08E03D3F777E209336CAA887585ECF1FF4A60FFB, ___U3CCategoryU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(UnconditionalSuppressMessageAttribute_t08E03D3F777E209336CAA887585ECF1FF4A60FFB, ___U3CCheckIdU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(UnconditionalSuppressMessageAttribute_t08E03D3F777E209336CAA887585ECF1FF4A60FFB, ___U3CJustificationU3Ek__BackingField_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8781[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8782[2] = 
 {
 	static_cast<int32_t>(offsetof(StringSyntaxAttribute_t452E153C768E3A8ACF80D9FB7A896CB141503914, ___U3CSyntaxU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(StringSyntaxAttribute_t452E153C768E3A8ACF80D9FB7A896CB141503914, ___U3CArgumentsU3Ek__BackingField_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8782[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8783[1] = 
 {
 	static_cast<int32_t>(offsetof(RequiresDynamicCodeAttribute_t24A1A45D6123EFA1BB0AF47F5F4C0D25AD3C701B, ___U3CMessageU3Ek__BackingField_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8785[1] = 
-{
-	static_cast<int32_t>(offsetof(MaybeNullWhenAttribute_t64AF6DF184959933E931C43B403D4E6B26B72F2A, ___U3CReturnValueU3Ek__BackingField_0)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8786[1] = 
 {
-	static_cast<int32_t>(offsetof(NotNullWhenAttribute_t5980D9B8B716F4E6B4DBEAFF321073A193C38776, ___U3CReturnValueU3Ek__BackingField_0)),};
+	static_cast<int32_t>(offsetof(MaybeNullWhenAttribute_t64AF6DF184959933E931C43B403D4E6B26B72F2A, ___U3CReturnValueU3Ek__BackingField_0)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8787[1] = 
 {
+	static_cast<int32_t>(offsetof(NotNullWhenAttribute_t5980D9B8B716F4E6B4DBEAFF321073A193C38776, ___U3CReturnValueU3Ek__BackingField_0)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8788[1] = 
+{
 	static_cast<int32_t>(offsetof(NotNullIfNotNullAttribute_t57D156DE73666B9EF663DF195DEB4F1FBB647873, ___U3CParameterNameU3Ek__BackingField_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8790[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8791[1] = 
 {
 	static_cast<int32_t>(offsetof(ReferenceEqualityComparer_t4A2A6232F482197E9FEF9D84137EAF91ADCE14E3_StaticFields, ___U3CInstanceU3Ek__BackingField_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8791[2] = 
-{
-	0,0,};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8792[2] = 
 {
+	0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8793[2] = 
+{
 	static_cast<int32_t>(offsetof(PooledByteBufferWriter_tFD5CABBA6D5073D8882FE5E6A486AC288B01EE52, ____rentedBuffer_0)),static_cast<int32_t>(offsetof(PooledByteBufferWriter_tFD5CABBA6D5073D8882FE5E6A486AC288B01EE52, ____index_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8795[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8796[1] = 
 {
 	static_cast<int32_t>(offsetof(JsonNamingPolicy_tF52DC40FDD225060731BD06BE8478CFA52216BC4_StaticFields, ___U3CCamelCaseU3Ek__BackingField_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8797[11] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8798[11] = 
 {
 	static_cast<int32_t>(offsetof(DateTimeParseData_t2104E379E1F969E08E9B0741B7DE955DD7BD5E4B, ___Year_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(DateTimeParseData_t2104E379E1F969E08E9B0741B7DE955DD7BD5E4B, ___Month_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(DateTimeParseData_t2104E379E1F969E08E9B0741B7DE955DD7BD5E4B, ___Day_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(DateTimeParseData_t2104E379E1F969E08E9B0741B7DE955DD7BD5E4B, ___IsCalendarDateOnly_3)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(DateTimeParseData_t2104E379E1F969E08E9B0741B7DE955DD7BD5E4B, ___Hour_4)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(DateTimeParseData_t2104E379E1F969E08E9B0741B7DE955DD7BD5E4B, ___Minute_5)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(DateTimeParseData_t2104E379E1F969E08E9B0741B7DE955DD7BD5E4B, ___Second_6)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(DateTimeParseData_t2104E379E1F969E08E9B0741B7DE955DD7BD5E4B, ___Fraction_7)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(DateTimeParseData_t2104E379E1F969E08E9B0741B7DE955DD7BD5E4B, ___OffsetHours_8)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(DateTimeParseData_t2104E379E1F969E08E9B0741B7DE955DD7BD5E4B, ___OffsetMinutes_9)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(DateTimeParseData_t2104E379E1F969E08E9B0741B7DE955DD7BD5E4B, ___OffsetToken_10)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8798[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8799[2] = 
 {
 	static_cast<int32_t>(offsetof(JsonHelpers_t2F748DBC116C02F33AE0416DD30A1201BA7241F2_StaticFields, ___s_daysToMonth365_0)),static_cast<int32_t>(offsetof(JsonHelpers_t2F748DBC116C02F33AE0416DD30A1201BA7241F2_StaticFields, ___s_daysToMonth366_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8799[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8800[1] = 
 {
 	static_cast<int32_t>(offsetof(AppContextSwitchHelper_tCA5FF87BD97063B49A2A53D3C861D36F37C9B46B_StaticFields, ___s_isSourceGenReflectionFallbackEnabled_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8800[3] = 
-{
-	static_cast<int32_t>(offsetof(BitStack_t460BCC3E60CEEB19DD5A9535794E2702E50121B5, ____array_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(BitStack_t460BCC3E60CEEB19DD5A9535794E2702E50121B5, ____allocationFreeContainer_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(BitStack_t460BCC3E60CEEB19DD5A9535794E2702E50121B5, ____currentDepth_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8801[3] = 
 {
+	static_cast<int32_t>(offsetof(BitStack_t460BCC3E60CEEB19DD5A9535794E2702E50121B5, ____array_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(BitStack_t460BCC3E60CEEB19DD5A9535794E2702E50121B5, ____allocationFreeContainer_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(BitStack_t460BCC3E60CEEB19DD5A9535794E2702E50121B5, ____currentDepth_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8802[3] = 
+{
 	static_cast<int32_t>(offsetof(DbRow_tE615CC3BB6DEF640B0A0879A73173FD7C260E75D, ____location_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(DbRow_tE615CC3BB6DEF640B0A0879A73173FD7C260E75D, ____sizeOrLengthUnion_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(DbRow_tE615CC3BB6DEF640B0A0879A73173FD7C260E75D, ____numberOfRowsAndTypeUnion_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8802[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8803[4] = 
 {
 	static_cast<int32_t>(offsetof(MetadataDb_tD3FE33D093F9BFEEED874AEEAF550C2337AC7545, ___U3CLengthU3Ek__BackingField_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MetadataDb_tD3FE33D093F9BFEEED874AEEAF550C2337AC7545, ____data_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MetadataDb_tD3FE33D093F9BFEEED874AEEAF550C2337AC7545, ____convertToAlloc_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MetadataDb_tD3FE33D093F9BFEEED874AEEAF550C2337AC7545, ____isLocked_3)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8803[2] = 
-{
-	static_cast<int32_t>(offsetof(StackRow_t65B5EF2C2BB0E465D4A75845FB2864C65D053BCD, ___SizeOrLength_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(StackRow_t65B5EF2C2BB0E465D4A75845FB2864C65D053BCD, ___NumberOfRows_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8804[2] = 
 {
+	static_cast<int32_t>(offsetof(StackRow_t65B5EF2C2BB0E465D4A75845FB2864C65D053BCD, ___SizeOrLength_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(StackRow_t65B5EF2C2BB0E465D4A75845FB2864C65D053BCD, ___NumberOfRows_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8805[2] = 
+{
 	static_cast<int32_t>(offsetof(StackRowStack_t6FFB9C5B1BF540D96DDA12747BDE37CB39E9A163, ____rentedBuffer_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(StackRowStack_t6FFB9C5B1BF540D96DDA12747BDE37CB39E9A163, ____topOfStack_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8805[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8806[1] = 
 {
 	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass73_0_t942CD6FB50CC353D04104F2AB60F7AED48D78722, ___tokenType_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8806[9] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8807[9] = 
 {
 	static_cast<int32_t>(offsetof(JsonDocument_tF96A1F7D1D40932B5EA6A97DA06E150B6CBDBE6F, ____utf8Json_0)),static_cast<int32_t>(offsetof(JsonDocument_tF96A1F7D1D40932B5EA6A97DA06E150B6CBDBE6F, ____parsedData_1)),static_cast<int32_t>(offsetof(JsonDocument_tF96A1F7D1D40932B5EA6A97DA06E150B6CBDBE6F, ____extraRentedArrayPoolBytes_2)),static_cast<int32_t>(offsetof(JsonDocument_tF96A1F7D1D40932B5EA6A97DA06E150B6CBDBE6F, ____extraPooledByteBufferWriter_3)),static_cast<int32_t>(offsetof(JsonDocument_tF96A1F7D1D40932B5EA6A97DA06E150B6CBDBE6F, ____lastIndexAndString_4)),static_cast<int32_t>(offsetof(JsonDocument_tF96A1F7D1D40932B5EA6A97DA06E150B6CBDBE6F, ___U3CIsDisposableU3Ek__BackingField_5)),static_cast<int32_t>(offsetof(JsonDocument_tF96A1F7D1D40932B5EA6A97DA06E150B6CBDBE6F_StaticFields, ___s_nullLiteral_6)),static_cast<int32_t>(offsetof(JsonDocument_tF96A1F7D1D40932B5EA6A97DA06E150B6CBDBE6F_StaticFields, ___s_trueLiteral_7)),static_cast<int32_t>(offsetof(JsonDocument_tF96A1F7D1D40932B5EA6A97DA06E150B6CBDBE6F_StaticFields, ___s_falseLiteral_8)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8807[3] = 
-{
-	static_cast<int32_t>(offsetof(ArrayEnumerator_t6A32F25D9BE79D9856DA29CBAD749933F2C9C97C, ____target_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ArrayEnumerator_t6A32F25D9BE79D9856DA29CBAD749933F2C9C97C, ____curIdx_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ArrayEnumerator_t6A32F25D9BE79D9856DA29CBAD749933F2C9C97C, ____endIdxOrVersion_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8808[3] = 
 {
-	static_cast<int32_t>(offsetof(ObjectEnumerator_t487A77D90D0F445E20E32C67BA6987298AFE04B9, ____target_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ObjectEnumerator_t487A77D90D0F445E20E32C67BA6987298AFE04B9, ____curIdx_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ObjectEnumerator_t487A77D90D0F445E20E32C67BA6987298AFE04B9, ____endIdxOrVersion_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8809[2] = 
+	static_cast<int32_t>(offsetof(ArrayEnumerator_t6A32F25D9BE79D9856DA29CBAD749933F2C9C97C, ____target_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ArrayEnumerator_t6A32F25D9BE79D9856DA29CBAD749933F2C9C97C, ____curIdx_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ArrayEnumerator_t6A32F25D9BE79D9856DA29CBAD749933F2C9C97C, ____endIdxOrVersion_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8809[3] = 
 {
-	static_cast<int32_t>(offsetof(JsonElement_t22F19A752BE0B1FB551D861A7ADFC7DD754BD4B1, ____parent_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(JsonElement_t22F19A752BE0B1FB551D861A7ADFC7DD754BD4B1, ____idx_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
+	static_cast<int32_t>(offsetof(ObjectEnumerator_t487A77D90D0F445E20E32C67BA6987298AFE04B9, ____target_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ObjectEnumerator_t487A77D90D0F445E20E32C67BA6987298AFE04B9, ____curIdx_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ObjectEnumerator_t487A77D90D0F445E20E32C67BA6987298AFE04B9, ____endIdxOrVersion_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8810[2] = 
 {
+	static_cast<int32_t>(offsetof(JsonElement_t22F19A752BE0B1FB551D861A7ADFC7DD754BD4B1, ____parent_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(JsonElement_t22F19A752BE0B1FB551D861A7ADFC7DD754BD4B1, ____idx_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8811[2] = 
+{
 	static_cast<int32_t>(offsetof(JsonProperty_t9ED20BB68BAF4B8220A5D4AF3350B05639735739, ___U3CValueU3Ek__BackingField_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(JsonProperty_t9ED20BB68BAF4B8220A5D4AF3350B05639735739, ___U3C_nameU3Ek__BackingField_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8811[9] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8812[9] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8812[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8813[4] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8813[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8814[2] = 
 {
 	static_cast<int32_t>(offsetof(JsonEncodedText_tCBC417E15CEE99E4865E048489B637A186628D23, ____utf8Value_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(JsonEncodedText_tCBC417E15CEE99E4865E048489B637A186628D23, ____value_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8814[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8815[5] = 
 {
 	static_cast<int32_t>(offsetof(JsonException_t17091B163DCCFB4ED006A5194D280EF6655A14C9, ____message_18)),static_cast<int32_t>(offsetof(JsonException_t17091B163DCCFB4ED006A5194D280EF6655A14C9, ___U3CAppendPathInformationU3Ek__BackingField_19)),static_cast<int32_t>(offsetof(JsonException_t17091B163DCCFB4ED006A5194D280EF6655A14C9, ___U3CLineNumberU3Ek__BackingField_20)),static_cast<int32_t>(offsetof(JsonException_t17091B163DCCFB4ED006A5194D280EF6655A14C9, ___U3CBytePositionInLineU3Ek__BackingField_21)),static_cast<int32_t>(offsetof(JsonException_t17091B163DCCFB4ED006A5194D280EF6655A14C9, ___U3CPathU3Ek__BackingField_22)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8815[4] = 
-{
-	0,0,0,0,};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8816[4] = 
 {
 	0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8817[1] = 
-{
-	0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8818[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8817[4] = 
 {
 	0,0,0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8818[1] = 
+{
+	0,};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8819[4] = 
 {
 	0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8820[1] = 
-{
-	0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8821[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8820[4] = 
 {
 	0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8822[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8821[1] = 
+{
+	0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8822[4] = 
+{
+	0,0,0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8823[6] = 
 {
 	0,0,0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8823[13] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8824[13] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,0,0,0,0,0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8824[4] = 
-{
-	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8825[4] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8827[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8826[4] = 
+{
+	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8828[1] = 
 {
 	static_cast<int32_t>(offsetof(JsonReaderHelper_tA3663913E5E5070F417E800E65A4D472DFF42F1E_StaticFields, ___s_utf8Encoding_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8828[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8829[3] = 
 {
 	static_cast<int32_t>(offsetof(JsonReaderOptions_t947F34FBFA3AD2E8E137B660EC0FAFE4571D7E32, ____maxDepth_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(JsonReaderOptions_t947F34FBFA3AD2E8E137B660EC0FAFE4571D7E32, ____commentHandling_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(JsonReaderOptions_t947F34FBFA3AD2E8E137B660EC0FAFE4571D7E32, ___U3CAllowTrailingCommasU3Ek__BackingField_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8829[10] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8830[10] = 
 {
 	static_cast<int32_t>(offsetof(JsonReaderState_t6F9FAEDB51A98D33397B9B838A7F7706052AE071, ____lineNumber_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(JsonReaderState_t6F9FAEDB51A98D33397B9B838A7F7706052AE071, ____bytePositionInLine_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(JsonReaderState_t6F9FAEDB51A98D33397B9B838A7F7706052AE071, ____inObject_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(JsonReaderState_t6F9FAEDB51A98D33397B9B838A7F7706052AE071, ____isNotPrimitive_3)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(JsonReaderState_t6F9FAEDB51A98D33397B9B838A7F7706052AE071, ____valueIsEscaped_4)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(JsonReaderState_t6F9FAEDB51A98D33397B9B838A7F7706052AE071, ____trailingCommaBeforeComment_5)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(JsonReaderState_t6F9FAEDB51A98D33397B9B838A7F7706052AE071, ____tokenType_6)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(JsonReaderState_t6F9FAEDB51A98D33397B9B838A7F7706052AE071, ____previousTokenType_7)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(JsonReaderState_t6F9FAEDB51A98D33397B9B838A7F7706052AE071, ____readerOptions_8)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(JsonReaderState_t6F9FAEDB51A98D33397B9B838A7F7706052AE071, ____bitStack_9)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8830[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8831[4] = 
 {
 	static_cast<int32_t>(offsetof(PartialStateForRollback_t92D7937D33C23DF7AD3C8D2E2057D5C9F2A887CF, ____prevTotalConsumed_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(PartialStateForRollback_t92D7937D33C23DF7AD3C8D2E2057D5C9F2A887CF, ____prevBytePositionInLine_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(PartialStateForRollback_t92D7937D33C23DF7AD3C8D2E2057D5C9F2A887CF, ____prevConsumed_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(PartialStateForRollback_t92D7937D33C23DF7AD3C8D2E2057D5C9F2A887CF, ____prevCurrentPosition_3)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8831[24] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8832[24] = 
 {
 	static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ____buffer_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ____isFinalBlock_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ____isInputSequence_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ____lineNumber_3)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ____bytePositionInLine_4)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ____consumed_5)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ____inObject_6)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ____isNotPrimitive_7)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ____tokenType_8)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ____previousTokenType_9)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ____readerOptions_10)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ____bitStack_11)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ____totalConsumed_12)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ____isLastSegment_13)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ____isMultiSegment_14)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ____trailingCommaBeforeComment_15)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ____nextPosition_16)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ____currentPosition_17)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ____sequence_18)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ___U3CValueSpanU3Ek__BackingField_19)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ___U3CTokenStartIndexU3Ek__BackingField_20)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ___U3CHasValueSequenceU3Ek__BackingField_21)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ___U3CValueIsEscapedU3Ek__BackingField_22)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(Utf8JsonReader_t50B1BC01A960970568250B04FB9236B63B0996E8, ___U3CValueSequenceU3Ek__BackingField_23)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8832[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8833[4] = 
 {
 	0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8833[7] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8834[7] = 
 {
 	static_cast<int32_t>(offsetof(ArgumentState_t80D4E71A31A6E55D1C4888B38C0E51798DB26F98, ___Arguments_0)),static_cast<int32_t>(offsetof(ArgumentState_t80D4E71A31A6E55D1C4888B38C0E51798DB26F98, ___FoundProperties_1)),static_cast<int32_t>(offsetof(ArgumentState_t80D4E71A31A6E55D1C4888B38C0E51798DB26F98, ___FoundPropertiesAsync_2)),static_cast<int32_t>(offsetof(ArgumentState_t80D4E71A31A6E55D1C4888B38C0E51798DB26F98, ___FoundPropertyCount_3)),static_cast<int32_t>(offsetof(ArgumentState_t80D4E71A31A6E55D1C4888B38C0E51798DB26F98, ___JsonParameterInfo_4)),static_cast<int32_t>(offsetof(ArgumentState_t80D4E71A31A6E55D1C4888B38C0E51798DB26F98, ___ParameterIndex_5)),static_cast<int32_t>(offsetof(ArgumentState_t80D4E71A31A6E55D1C4888B38C0E51798DB26F98, ___ParameterRefCache_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8834[8] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8835[8] = 
 {
 	static_cast<int32_t>(offsetof(JsonSerializer_tDA5AEC22B45A1019EBFFE2599660A1B9B53BB083_StaticFields, ___s_idPropertyName_0)),static_cast<int32_t>(offsetof(JsonSerializer_tDA5AEC22B45A1019EBFFE2599660A1B9B53BB083_StaticFields, ___s_refPropertyName_1)),static_cast<int32_t>(offsetof(JsonSerializer_tDA5AEC22B45A1019EBFFE2599660A1B9B53BB083_StaticFields, ___s_typePropertyName_2)),static_cast<int32_t>(offsetof(JsonSerializer_tDA5AEC22B45A1019EBFFE2599660A1B9B53BB083_StaticFields, ___s_valuesPropertyName_3)),static_cast<int32_t>(offsetof(JsonSerializer_tDA5AEC22B45A1019EBFFE2599660A1B9B53BB083_StaticFields, ___s_metadataId_4)),static_cast<int32_t>(offsetof(JsonSerializer_tDA5AEC22B45A1019EBFFE2599660A1B9B53BB083_StaticFields, ___s_metadataRef_5)),static_cast<int32_t>(offsetof(JsonSerializer_tDA5AEC22B45A1019EBFFE2599660A1B9B53BB083_StaticFields, ___s_metadataType_6)),static_cast<int32_t>(offsetof(JsonSerializer_tDA5AEC22B45A1019EBFFE2599660A1B9B53BB083_StaticFields, ___s_metadataValues_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8835[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8836[5] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8836[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8837[3] = 
 {
 	static_cast<int32_t>(offsetof(ThreadLocalState_t245AA503CB420C43AA24B5D27C1D7C27BE309A01, ___BufferWriter_0)),static_cast<int32_t>(offsetof(ThreadLocalState_t245AA503CB420C43AA24B5D27C1D7C27BE309A01, ___Writer_1)),static_cast<int32_t>(offsetof(ThreadLocalState_t245AA503CB420C43AA24B5D27C1D7C27BE309A01, ___RentedWriters_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8837[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8838[1] = 
 {
 	static_cast<int32_t>(offsetof(Utf8JsonWriterCache_tBFAED6CB42B1F4EB6E25A526081316CAA15FE3EC_ThreadStaticFields, ___t_threadLocalState_0)) | THREAD_LOCAL_STATIC_MASK,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8838[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8839[6] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8839[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8840[3] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8840[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8841[4] = 
 {
 	static_cast<int32_t>(offsetof(CachingContext_t5514DC7C3CD75076E8D923118AF52F7C58F6FC29, ____jsonTypeInfoCache_0)),static_cast<int32_t>(offsetof(CachingContext_t5514DC7C3CD75076E8D923118AF52F7C58F6FC29, ____jsonTypeInfoFactory_1)),static_cast<int32_t>(offsetof(CachingContext_t5514DC7C3CD75076E8D923118AF52F7C58F6FC29, ___U3COptionsU3Ek__BackingField_2)),static_cast<int32_t>(offsetof(CachingContext_t5514DC7C3CD75076E8D923118AF52F7C58F6FC29, ___U3CHashCodeU3Ek__BackingField_3)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8841[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8842[2] = 
 {
 	static_cast<int32_t>(offsetof(TrackedCachingContexts_tD081BEF847D6D90C6A8D723D99B2374DDA36B008_StaticFields, ___s_trackedContexts_0)),static_cast<int32_t>(offsetof(TrackedCachingContexts_tD081BEF847D6D90C6A8D723D99B2374DDA36B008_StaticFields, ___s_optionsComparer_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8842[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8843[1] = 
 {
 	static_cast<int32_t>(offsetof(HashCode_tB415365C9E2A970C1237564FD4705183B3516E79, ____hashCode_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8844[1] = 
-{
-	static_cast<int32_t>(offsetof(TrackedOptionsInstances_t8118AEF9ADB2BB75A1BFFD842B996831FC2261EB_StaticFields, ___U3CAllU3Ek__BackingField_0)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8845[1] = 
 {
+	static_cast<int32_t>(offsetof(TrackedOptionsInstances_t8118AEF9ADB2BB75A1BFFD842B996831FC2261EB_StaticFields, ___U3CAllU3Ek__BackingField_0)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8846[1] = 
+{
 	static_cast<int32_t>(offsetof(ConverterList_tF7AE83615ED78D8E132DB4D94A16BC948C692CB9, ____options_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8846[29] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8847[29] = 
 {
 	static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____cachingContext_0)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____lastTypeInfo_1)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____objectTypeInfo_2)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD_StaticFields, ___s_defaultOptions_3)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____typeInfoResolver_4)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____memberAccessorStrategy_5)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____dictionaryKeyPolicy_6)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____jsonPropertyNamingPolicy_7)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____readCommentHandling_8)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____referenceHandler_9)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____encoder_10)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____converters_11)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____defaultIgnoreCondition_12)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____numberHandling_13)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____unknownTypeHandling_14)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____defaultBufferSize_15)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____maxDepth_16)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____allowTrailingCommas_17)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____ignoreNullValues_18)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____ignoreReadOnlyProperties_19)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____ignoreReadonlyFields_20)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____includeFields_21)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____propertyNameCaseInsensitive_22)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____writeIndented_23)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____isImmutable_24)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ___U3CEffectiveMaxDepthU3Ek__BackingField_25)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ___ReferenceHandlingStrategy_26)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____isInitializedForReflectionSerializer_27)),static_cast<int32_t>(offsetof(JsonSerializerOptions_t1BC3604A5B3A44F4A929837EF2DD3B9441AC05BD, ____effectiveJsonTypeInfoResolver_28)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8847[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8848[6] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8848[13] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8849[13] = 
 {
 	static_cast<int32_t>(offsetof(ReadStack_t3F5BA42D8204DB5EC2843D77EC7A94401EAFC7A9_StaticFields, ___SpecialCharacters_0)),static_cast<int32_t>(offsetof(ReadStack_t3F5BA42D8204DB5EC2843D77EC7A94401EAFC7A9, ___Current_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStack_t3F5BA42D8204DB5EC2843D77EC7A94401EAFC7A9, ____stack_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStack_t3F5BA42D8204DB5EC2843D77EC7A94401EAFC7A9, ____count_3)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStack_t3F5BA42D8204DB5EC2843D77EC7A94401EAFC7A9, ____continuationCount_4)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStack_t3F5BA42D8204DB5EC2843D77EC7A94401EAFC7A9, ____ctorArgStateCache_5)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStack_t3F5BA42D8204DB5EC2843D77EC7A94401EAFC7A9, ___BytesConsumed_6)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStack_t3F5BA42D8204DB5EC2843D77EC7A94401EAFC7A9, ___ReadAhead_7)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStack_t3F5BA42D8204DB5EC2843D77EC7A94401EAFC7A9, ___ReferenceResolver_8)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStack_t3F5BA42D8204DB5EC2843D77EC7A94401EAFC7A9, ___SupportContinuation_9)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStack_t3F5BA42D8204DB5EC2843D77EC7A94401EAFC7A9, ___ReferenceId_10)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStack_t3F5BA42D8204DB5EC2843D77EC7A94401EAFC7A9, ___PolymorphicTypeDiscriminator_11)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStack_t3F5BA42D8204DB5EC2843D77EC7A94401EAFC7A9, ___PreserveReferences_12)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8849[20] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8850[20] = 
 {
 	static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___JsonPropertyInfo_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___PropertyState_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___UseExtensionProperty_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___JsonPropertyName_3)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___JsonPropertyNameAsString_4)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___DictionaryKey_5)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___ReturnValue_6)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___JsonTypeInfo_7)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___ObjectState_8)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___CanContainMetadata_9)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___LatestMetadataPropertyName_10)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___MetadataPropertyNames_11)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___PolymorphicSerializationState_12)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___PolymorphicJsonTypeInfo_13)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___PropertyIndex_14)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___PropertyRefCache_15)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___CtorArgumentStateIndex_16)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___CtorArgumentState_17)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___NumberHandling_18)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ReadStackFrame_t8DABE60E6F912C1C19F02BE56C9BC7CA062EE20A, ___RequiredPropertiesSet_19)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8850[9] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8851[9] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8851[7] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8852[7] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8852[16] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8853[16] = 
 {
 	static_cast<int32_t>(offsetof(WriteStack_t1C9D84FF0610BA9C5DD5BF22A71049258F0E82C1, ___Current_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStack_t1C9D84FF0610BA9C5DD5BF22A71049258F0E82C1, ____stack_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStack_t1C9D84FF0610BA9C5DD5BF22A71049258F0E82C1, ____count_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStack_t1C9D84FF0610BA9C5DD5BF22A71049258F0E82C1, ____continuationCount_3)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStack_t1C9D84FF0610BA9C5DD5BF22A71049258F0E82C1, ____indexOffset_4)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStack_t1C9D84FF0610BA9C5DD5BF22A71049258F0E82C1, ___CancellationToken_5)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStack_t1C9D84FF0610BA9C5DD5BF22A71049258F0E82C1, ___SuppressFlush_6)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStack_t1C9D84FF0610BA9C5DD5BF22A71049258F0E82C1, ___PendingTask_7)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStack_t1C9D84FF0610BA9C5DD5BF22A71049258F0E82C1, ___CompletedAsyncDisposables_8)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStack_t1C9D84FF0610BA9C5DD5BF22A71049258F0E82C1, ___FlushThreshold_9)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStack_t1C9D84FF0610BA9C5DD5BF22A71049258F0E82C1, ___IsPolymorphicRootValue_10)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStack_t1C9D84FF0610BA9C5DD5BF22A71049258F0E82C1, ___ReferenceResolver_11)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStack_t1C9D84FF0610BA9C5DD5BF22A71049258F0E82C1, ___SupportContinuation_12)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStack_t1C9D84FF0610BA9C5DD5BF22A71049258F0E82C1, ___SupportAsync_13)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStack_t1C9D84FF0610BA9C5DD5BF22A71049258F0E82C1, ___NewReferenceId_14)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStack_t1C9D84FF0610BA9C5DD5BF22A71049258F0E82C1, ___PolymorphicTypeDiscriminator_15)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8853[17] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8854[17] = 
 {
 	static_cast<int32_t>(offsetof(WriteStackFrame_t0CC4719C6FFC6CE075F03E260758587265CB9902, ___CollectionEnumerator_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStackFrame_t0CC4719C6FFC6CE075F03E260758587265CB9902, ___AsyncDisposable_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStackFrame_t0CC4719C6FFC6CE075F03E260758587265CB9902, ___AsyncEnumeratorIsPendingCompletion_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStackFrame_t0CC4719C6FFC6CE075F03E260758587265CB9902, ___JsonPropertyInfo_3)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStackFrame_t0CC4719C6FFC6CE075F03E260758587265CB9902, ___IsWritingExtensionDataProperty_4)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStackFrame_t0CC4719C6FFC6CE075F03E260758587265CB9902, ___JsonTypeInfo_5)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStackFrame_t0CC4719C6FFC6CE075F03E260758587265CB9902, ___OriginalDepth_6)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStackFrame_t0CC4719C6FFC6CE075F03E260758587265CB9902, ___ProcessedStartToken_7)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStackFrame_t0CC4719C6FFC6CE075F03E260758587265CB9902, ___ProcessedEndToken_8)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStackFrame_t0CC4719C6FFC6CE075F03E260758587265CB9902, ___PropertyState_9)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStackFrame_t0CC4719C6FFC6CE075F03E260758587265CB9902, ___EnumeratorIndex_10)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStackFrame_t0CC4719C6FFC6CE075F03E260758587265CB9902, ___JsonPropertyNameAsString_11)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStackFrame_t0CC4719C6FFC6CE075F03E260758587265CB9902, ___MetadataPropertyName_12)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStackFrame_t0CC4719C6FFC6CE075F03E260758587265CB9902, ___PolymorphicSerializationState_13)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStackFrame_t0CC4719C6FFC6CE075F03E260758587265CB9902, ___PolymorphicJsonTypeInfo_14)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStackFrame_t0CC4719C6FFC6CE075F03E260758587265CB9902, ___NumberHandling_15)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(WriteStackFrame_t0CC4719C6FFC6CE075F03E260758587265CB9902, ___IsPushedReferenceForCycleDetection_16)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8854[42] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8855[42] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8855[12] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8856[12] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,0,0,0,0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8856[10] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8857[10] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,0,0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8857[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8858[2] = 
 {
 	static_cast<int32_t>(offsetof(JsonWriterHelper_tA5331A7EA56731FFC09F22BA5889073993C09594_StaticFields, ___s_dateTimeStandardFormat_0)),static_cast<int32_t>(offsetof(JsonWriterHelper_tA5331A7EA56731FFC09F22BA5889073993C09594_StaticFields, ___s_hexStandardFormat_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8858[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8859[3] = 
 {
 	static_cast<int32_t>(offsetof(JsonWriterOptions_tDB35565F2F04D544AA46578697124F259D974397, ____maxDepth_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(JsonWriterOptions_tDB35565F2F04D544AA46578697124F259D974397, ____optionsMask_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(JsonWriterOptions_tDB35565F2F04D544AA46578697124F259D974397, ___U3CEncoderU3Ek__BackingField_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8859[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8860[4] = 
 {
 	static_cast<int32_t>(offsetof(U3CDisposeAsyncU3Ed__41_tBC0A89B4403ADBF9F277EB635986F6803D7FCB83, ___U3CU3E1__state_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(U3CDisposeAsyncU3Ed__41_tBC0A89B4403ADBF9F277EB635986F6803D7FCB83, ___U3CU3Et__builder_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(U3CDisposeAsyncU3Ed__41_tBC0A89B4403ADBF9F277EB635986F6803D7FCB83, ___U3CU3E4__this_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(U3CDisposeAsyncU3Ed__41_tBC0A89B4403ADBF9F277EB635986F6803D7FCB83, ___U3CU3Eu__1_3)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8860[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8861[5] = 
 {
 	static_cast<int32_t>(offsetof(U3CFlushAsyncU3Ed__42_tD233FB70B7EE5C51924B99289B744FA6C0351A70, ___U3CU3E1__state_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(U3CFlushAsyncU3Ed__42_tD233FB70B7EE5C51924B99289B744FA6C0351A70, ___U3CU3Et__builder_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(U3CFlushAsyncU3Ed__42_tD233FB70B7EE5C51924B99289B744FA6C0351A70, ___U3CU3E4__this_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(U3CFlushAsyncU3Ed__42_tD233FB70B7EE5C51924B99289B744FA6C0351A70, ___cancellationToken_3)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(U3CFlushAsyncU3Ed__42_tD233FB70B7EE5C51924B99289B744FA6C0351A70, ___U3CU3Eu__1_4)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8861[13] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8862[13] = 
 {
 	static_cast<int32_t>(offsetof(Utf8JsonWriter_tA826CDE54648E07350A13B36AFCA74528B41EFA0_StaticFields, ___s_newLineLength_0)),static_cast<int32_t>(offsetof(Utf8JsonWriter_tA826CDE54648E07350A13B36AFCA74528B41EFA0, ____output_1)),static_cast<int32_t>(offsetof(Utf8JsonWriter_tA826CDE54648E07350A13B36AFCA74528B41EFA0, ____stream_2)),static_cast<int32_t>(offsetof(Utf8JsonWriter_tA826CDE54648E07350A13B36AFCA74528B41EFA0, ____arrayBufferWriter_3)),static_cast<int32_t>(offsetof(Utf8JsonWriter_tA826CDE54648E07350A13B36AFCA74528B41EFA0, ____memory_4)),static_cast<int32_t>(offsetof(Utf8JsonWriter_tA826CDE54648E07350A13B36AFCA74528B41EFA0, ____inObject_5)),static_cast<int32_t>(offsetof(Utf8JsonWriter_tA826CDE54648E07350A13B36AFCA74528B41EFA0, ____tokenType_6)),static_cast<int32_t>(offsetof(Utf8JsonWriter_tA826CDE54648E07350A13B36AFCA74528B41EFA0, ____bitStack_7)),static_cast<int32_t>(offsetof(Utf8JsonWriter_tA826CDE54648E07350A13B36AFCA74528B41EFA0, ____currentDepth_8)),static_cast<int32_t>(offsetof(Utf8JsonWriter_tA826CDE54648E07350A13B36AFCA74528B41EFA0, ____options_9)),static_cast<int32_t>(offsetof(Utf8JsonWriter_tA826CDE54648E07350A13B36AFCA74528B41EFA0, ___U3CBytesPendingU3Ek__BackingField_10)),static_cast<int32_t>(offsetof(Utf8JsonWriter_tA826CDE54648E07350A13B36AFCA74528B41EFA0, ___U3CBytesCommittedU3Ek__BackingField_11)),static_cast<int32_t>(offsetof(Utf8JsonWriter_tA826CDE54648E07350A13B36AFCA74528B41EFA0_StaticFields, ___s_singleLineCommentDelimiter_12)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8863[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8864[2] = 
 {
 	static_cast<int32_t>(offsetof(JsonArray_t6DE24339B68423D5CBE9C062822F72195B996FC5, ____jsonElement_3)),static_cast<int32_t>(offsetof(JsonArray_t6DE24339B68423D5CBE9C062822F72195B996FC5, ____list_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8864[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8865[3] = 
 {
 	static_cast<int32_t>(offsetof(JsonNode_t8767EC39C061077D49723679B6943C39E82C36FC, ____parent_0)),static_cast<int32_t>(offsetof(JsonNode_t8767EC39C061077D49723679B6943C39E82C36FC, ____options_1)),static_cast<int32_t>(offsetof(JsonNode_t8767EC39C061077D49723679B6943C39E82C36FC_StaticFields, ___s_defaultOptions_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8865[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8866[1] = 
 {
 	static_cast<int32_t>(offsetof(JsonNodeOptions_t5DBFA316A5BDB8AEC0E22C662258E1248F4D8F80, ___U3CPropertyNameCaseInsensitiveU3Ek__BackingField_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8867[2] = 
-{
-	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass9_0_tB17B5C3FE974FA485F03D9DEF3B7370B91E50E43, ___value_0)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass9_0_tB17B5C3FE974FA485F03D9DEF3B7370B91E50E43, ___U3CU3E4__this_1)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8868[2] = 
 {
+	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass9_0_tB17B5C3FE974FA485F03D9DEF3B7370B91E50E43, ___value_0)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass9_0_tB17B5C3FE974FA485F03D9DEF3B7370B91E50E43, ___U3CU3E4__this_1)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8869[2] = 
+{
 	static_cast<int32_t>(offsetof(JsonObject_t0A6FD9D786D48E05B2C2E74CA57A125D0154E807, ____jsonElement_3)),static_cast<int32_t>(offsetof(JsonObject_t0A6FD9D786D48E05B2C2E74CA57A125D0154E807, ____dictionary_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8871[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8872[1] = 
 {
 	0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8872[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8873[2] = 
 {
 	0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8873[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8874[1] = 
 {
 	static_cast<int32_t>(offsetof(ReflectionExtensions_t2CE4876FBBB5F1A565BD1E4DE1050B3F61098FFA_StaticFields, ___s_nullableType_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8875[5] = 
-{
-	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8876[5] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8878[1] = 
-{
-	static_cast<int32_t>(offsetof(JsonConverterAttribute_t468EC35E7E2180AE3E8CDBC3E5335699AF8C4A3E, ___U3CConverterTypeU3Ek__BackingField_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8879[2] = 
-{
-	static_cast<int32_t>(offsetof(JsonDerivedTypeAttribute_tF31B4C683FC18C55D166B1593C8C6EBBF9B70D01, ___U3CDerivedTypeU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(JsonDerivedTypeAttribute_tF31B4C683FC18C55D166B1593C8C6EBBF9B70D01, ___U3CTypeDiscriminatorU3Ek__BackingField_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8881[1] = 
-{
-	static_cast<int32_t>(offsetof(JsonIgnoreAttribute_t1428D9C93258F5BB795C8B650FACF63C4669B836, ___U3CConditionU3Ek__BackingField_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8883[1] = 
-{
-	static_cast<int32_t>(offsetof(JsonNumberHandlingAttribute_tDA0EEEF06CA04E36E1638D95E7831C0B40A82072, ___U3CHandlingU3Ek__BackingField_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8884[3] = 
-{
-	static_cast<int32_t>(offsetof(JsonPolymorphicAttribute_t607DC03F1E47DC971D0FA437E6EBF6F3745E5EA6, ___U3CTypeDiscriminatorPropertyNameU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(JsonPolymorphicAttribute_t607DC03F1E47DC971D0FA437E6EBF6F3745E5EA6, ___U3CUnknownDerivedTypeHandlingU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(JsonPolymorphicAttribute_t607DC03F1E47DC971D0FA437E6EBF6F3745E5EA6, ___U3CIgnoreUnrecognizedTypeDiscriminatorsU3Ek__BackingField_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8885[1] = 
-{
-	static_cast<int32_t>(offsetof(JsonPropertyNameAttribute_t6DA36821E2ECC006A0FA7377496AC3E7CCC6CCBA, ___U3CNameU3Ek__BackingField_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8887[1] = 
-{
-	static_cast<int32_t>(offsetof(JsonPropertyOrderAttribute_t1AA08A35BF47CD9104DD652AFEC300E05EF6D929, ___U3COrderU3Ek__BackingField_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8888[1] = 
-{
-	static_cast<int32_t>(offsetof(IgnoreReferenceResolver_t7B3A4EA5FBD7824C9D9D43DDEFE017169A8D9407, ____stackForCycleDetection_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8893[2] = 
-{
-	static_cast<int32_t>(offsetof(JsonSerializerContext_t1F6CFC5FBA85D0791A1EA249238EDC2B7410BD57, ____canUseSerializationLogic_0)),static_cast<int32_t>(offsetof(JsonSerializerContext_t1F6CFC5FBA85D0791A1EA249238EDC2B7410BD57, ____options_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8894[4] = 
-{
-	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8895[1] = 
-{
-	static_cast<int32_t>(offsetof(ReferenceEqualsWrapper_tC5C782AAD0F1CA019DF6257DAA92C92F62DA9C94, ____object_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8896[1] = 
-{
-	0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8901[2] = 
-{
-	0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8904[8] = 
-{
-	static_cast<int32_t>(offsetof(JsonConverter_tF959B6D2A456224E540D105EF06DF3821371E8F8, ___U3CCanUseDirectReadOrWriteU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(JsonConverter_tF959B6D2A456224E540D105EF06DF3821371E8F8, ___U3CCanBePolymorphicU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(JsonConverter_tF959B6D2A456224E540D105EF06DF3821371E8F8, ___U3CRequiresReadAheadU3Ek__BackingField_2)),static_cast<int32_t>(offsetof(JsonConverter_tF959B6D2A456224E540D105EF06DF3821371E8F8, ___U3CIsValueTypeU3Ek__BackingField_3)),static_cast<int32_t>(offsetof(JsonConverter_tF959B6D2A456224E540D105EF06DF3821371E8F8, ___U3CIsInternalConverterU3Ek__BackingField_4)),static_cast<int32_t>(offsetof(JsonConverter_tF959B6D2A456224E540D105EF06DF3821371E8F8, ___IsInternalConverterForNumberType_5)),static_cast<int32_t>(offsetof(JsonConverter_tF959B6D2A456224E540D105EF06DF3821371E8F8, ___U3CConstructorIsParameterizedU3Ek__BackingField_6)),static_cast<int32_t>(offsetof(JsonConverter_tF959B6D2A456224E540D105EF06DF3821371E8F8, ___U3CConstructorInfoU3Ek__BackingField_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8906[3] = 
-{
-	0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8908[3] = 
-{
-	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8910[3] = 
-{
-	static_cast<int32_t>(offsetof(PreserveReferenceResolver_t8141089A4BA27C8D607AE9AF095C4F0DD33C38A0, ____referenceCount_0)),static_cast<int32_t>(offsetof(PreserveReferenceResolver_t8141089A4BA27C8D607AE9AF095C4F0DD33C38A0, ____referenceIdToObjectMap_1)),static_cast<int32_t>(offsetof(PreserveReferenceResolver_t8141089A4BA27C8D607AE9AF095C4F0DD33C38A0, ____objectToReferenceIdMap_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8911[3] = 
-{
-	static_cast<int32_t>(offsetof(ReferenceHandler_t1630C9ADF53E934E6EE593185A0B1C4CFCED6FD5, ___HandlingStrategy_0)),static_cast<int32_t>(offsetof(ReferenceHandler_t1630C9ADF53E934E6EE593185A0B1C4CFCED6FD5_StaticFields, ___U3CPreserveU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(ReferenceHandler_t1630C9ADF53E934E6EE593185A0B1C4CFCED6FD5_StaticFields, ___U3CIgnoreCyclesU3Ek__BackingField_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8912[4] = 
-{
-	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8914[1] = 
-{
-	static_cast<int32_t>(offsetof(ModifierCollection_tD823A18381453E8C622F518E776C9A17EE3F0CD1, ____resolver_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8915[1] = 
-{
-	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass3_0_t1B30937DFDCE44A8AE783738C072D3509F234A0B, ___converters_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8916[5] = 
-{
-	static_cast<int32_t>(offsetof(DefaultJsonTypeInfoResolver_tF649D304F2D6E844D1CA13BAE1B05A06FDE0BC9F_StaticFields, ___s_defaultSimpleConverters_0)),static_cast<int32_t>(offsetof(DefaultJsonTypeInfoResolver_tF649D304F2D6E844D1CA13BAE1B05A06FDE0BC9F_StaticFields, ___s_defaultFactoryConverters_1)),static_cast<int32_t>(offsetof(DefaultJsonTypeInfoResolver_tF649D304F2D6E844D1CA13BAE1B05A06FDE0BC9F, ____mutable_2)),static_cast<int32_t>(offsetof(DefaultJsonTypeInfoResolver_tF649D304F2D6E844D1CA13BAE1B05A06FDE0BC9F, ____modifiers_3)),static_cast<int32_t>(offsetof(DefaultJsonTypeInfoResolver_tF649D304F2D6E844D1CA13BAE1B05A06FDE0BC9F_StaticFields, ___s_defaultInstance_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8918[2] = 
-{
-	static_cast<int32_t>(offsetof(JsonDerivedType_t1EF5EFFD3AE4B94BDFD7270BBA785AB9BE7530F1, ___U3CDerivedTypeU3Ek__BackingField_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(JsonDerivedType_t1EF5EFFD3AE4B94BDFD7270BBA785AB9BE7530F1, ___U3CTypeDiscriminatorU3Ek__BackingField_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8919[1] = 
-{
-	static_cast<int32_t>(offsetof(DerivedTypeList_tEC356F74204BEB197872F49A2539DBCA2E2223E0, ____parent_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8920[5] = 
-{
-	static_cast<int32_t>(offsetof(JsonPolymorphismOptions_tF55EC24F1E058D2AA0FC4FE4366AA3CF483642FA, ____derivedTypes_0)),static_cast<int32_t>(offsetof(JsonPolymorphismOptions_tF55EC24F1E058D2AA0FC4FE4366AA3CF483642FA, ____ignoreUnrecognizedTypeDiscriminators_1)),static_cast<int32_t>(offsetof(JsonPolymorphismOptions_tF55EC24F1E058D2AA0FC4FE4366AA3CF483642FA, ____unknownDerivedTypeHandling_2)),static_cast<int32_t>(offsetof(JsonPolymorphismOptions_tF55EC24F1E058D2AA0FC4FE4366AA3CF483642FA, ____typeDiscriminatorPropertyName_3)),static_cast<int32_t>(offsetof(JsonPolymorphismOptions_tF55EC24F1E058D2AA0FC4FE4366AA3CF483642FA, ___U3CDeclaringTypeInfoU3Ek__BackingField_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8921[1] = 
-{
-	static_cast<int32_t>(offsetof(CombiningJsonTypeInfoResolver_t11463B96A3D0B6AB8BCA2DA5F3721E4E929C0B44, ____resolvers_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8923[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8877[5] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8924[9] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8879[1] = 
 {
-	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8926[13] = 
+	static_cast<int32_t>(offsetof(JsonConverterAttribute_t468EC35E7E2180AE3E8CDBC3E5335699AF8C4A3E, ___U3CConverterTypeU3Ek__BackingField_0)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8880[2] = 
 {
-	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,0,0,0,0,0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8927[11] = 
+	static_cast<int32_t>(offsetof(JsonDerivedTypeAttribute_tF31B4C683FC18C55D166B1593C8C6EBBF9B70D01, ___U3CDerivedTypeU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(JsonDerivedTypeAttribute_tF31B4C683FC18C55D166B1593C8C6EBBF9B70D01, ___U3CTypeDiscriminatorU3Ek__BackingField_1)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8882[1] = 
 {
-	static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE_StaticFields, ___s_singletonInstance_0)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____compilationMappingAttributeType_1)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____sourceConstructFlagsGetter_2)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____fsharpOptionType_3)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____fsharpValueOptionType_4)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____fsharpListType_5)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____fsharpSetType_6)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____fsharpMapType_7)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____fsharpListCtor_8)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____fsharpSetCtor_9)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____fsharpMapCtor_10)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8928[1] = 
+	static_cast<int32_t>(offsetof(JsonIgnoreAttribute_t1428D9C93258F5BB795C8B650FACF63C4669B836, ___U3CConditionU3Ek__BackingField_0)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8884[1] = 
 {
-	static_cast<int32_t>(offsetof(DefaultValueHolder_tA77ECED936D1A6D62C025A3542D2542AE5CA5FEF, ___U3CDefaultValueU3Ek__BackingField_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8929[24] = 
+	static_cast<int32_t>(offsetof(JsonNumberHandlingAttribute_tDA0EEEF06CA04E36E1638D95E7831C0B40A82072, ___U3CHandlingU3Ek__BackingField_0)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8885[3] = 
 {
-	static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_booleanConverter_0)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_byteArrayConverter_1)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_byteConverter_2)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_charConverter_3)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_dateTimeConverter_4)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_dateTimeOffsetConverter_5)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_decimalConverter_6)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_doubleConverter_7)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_guidConverter_8)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_int16Converter_9)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_int32Converter_10)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_int64Converter_11)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_jsonElementConverter_12)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_jsonDocumentConverter_13)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_objectConverter_14)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_singleConverter_15)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_sbyteConverter_16)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_stringConverter_17)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_timeSpanConverter_18)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_uint16Converter_19)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_uint32Converter_20)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_uint64Converter_21)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_uriConverter_22)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_versionConverter_23)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8930[5] = 
+	static_cast<int32_t>(offsetof(JsonPolymorphicAttribute_t607DC03F1E47DC971D0FA437E6EBF6F3745E5EA6, ___U3CTypeDiscriminatorPropertyNameU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(JsonPolymorphicAttribute_t607DC03F1E47DC971D0FA437E6EBF6F3745E5EA6, ___U3CUnknownDerivedTypeHandlingU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(JsonPolymorphicAttribute_t607DC03F1E47DC971D0FA437E6EBF6F3745E5EA6, ___U3CIgnoreUnrecognizedTypeDiscriminatorsU3Ek__BackingField_2)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8886[1] = 
 {
-	static_cast<int32_t>(offsetof(JsonParameterInfoValues_t5B41873BA178CBAD84E20EB3572D331B8C981776, ___U3CNameU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(JsonParameterInfoValues_t5B41873BA178CBAD84E20EB3572D331B8C981776, ___U3CParameterTypeU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(JsonParameterInfoValues_t5B41873BA178CBAD84E20EB3572D331B8C981776, ___U3CPositionU3Ek__BackingField_2)),static_cast<int32_t>(offsetof(JsonParameterInfoValues_t5B41873BA178CBAD84E20EB3572D331B8C981776, ___U3CHasDefaultValueU3Ek__BackingField_3)),static_cast<int32_t>(offsetof(JsonParameterInfoValues_t5B41873BA178CBAD84E20EB3572D331B8C981776, ___U3CDefaultValueU3Ek__BackingField_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8931[12] = 
+	static_cast<int32_t>(offsetof(JsonPropertyNameAttribute_t6DA36821E2ECC006A0FA7377496AC3E7CCC6CCBA, ___U3CNameU3Ek__BackingField_0)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8888[1] = 
 {
-	static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ____jsonTypeInfo_0)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3CConverterBaseU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3CMatchingPropertyCanBeNullU3Ek__BackingField_2)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3CDefaultValueU3Ek__BackingField_3)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3CIgnoreNullTokensOnReadU3Ek__BackingField_4)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3COptionsU3Ek__BackingField_5)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3CNameAsUtf8BytesU3Ek__BackingField_6)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3CNumberHandlingU3Ek__BackingField_7)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___ClrInfo_8)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3CPropertyTypeU3Ek__BackingField_9)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3CShouldDeserializeU3Ek__BackingField_10)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3CMatchingPropertyU3Ek__BackingField_11)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8932[1] = 
+	static_cast<int32_t>(offsetof(JsonPropertyOrderAttribute_t1AA08A35BF47CD9104DD652AFEC300E05EF6D929, ___U3COrderU3Ek__BackingField_0)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8889[1] = 
+{
+	static_cast<int32_t>(offsetof(IgnoreReferenceResolver_t7B3A4EA5FBD7824C9D9D43DDEFE017169A8D9407, ____stackForCycleDetection_0)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8894[2] = 
+{
+	static_cast<int32_t>(offsetof(JsonSerializerContext_t1F6CFC5FBA85D0791A1EA249238EDC2B7410BD57, ____canUseSerializationLogic_0)),static_cast<int32_t>(offsetof(JsonSerializerContext_t1F6CFC5FBA85D0791A1EA249238EDC2B7410BD57, ____options_1)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8895[4] = 
+{
+	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8896[1] = 
+{
+	static_cast<int32_t>(offsetof(ReferenceEqualsWrapper_tC5C782AAD0F1CA019DF6257DAA92C92F62DA9C94, ____object_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8897[1] = 
 {
 	0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8933[37] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8902[2] = 
 {
-	static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E_StaticFields, ___s_missingProperty_0)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CParentTypeInfoU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____jsonTypeInfo_2)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CConverterStrategyU3Ek__BackingField_3)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____effectiveConverter_4)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____customConverter_5)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____untypedGet_6)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____untypedSet_7)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____isUserSpecifiedSetter_8)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____shouldSerialize_9)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____isUserSpecifiedShouldSerialize_10)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____ignoreCondition_11)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____attributeProvider_12)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CMemberNameU3Ek__BackingField_13)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CMemberTypeU3Ek__BackingField_14)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CIsVirtualU3Ek__BackingField_15)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____isExtensionDataProperty_16)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____isRequired_17)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CPropertyTypeU3Ek__BackingField_18)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____isConfigured_19)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CIgnoreNullTokensOnReadU3Ek__BackingField_20)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CIgnoreDefaultValuesOnWriteU3Ek__BackingField_21)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CIsForTypeInfoU3Ek__BackingField_22)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____name_23)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CNameAsUtf8BytesU3Ek__BackingField_24)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CEscapedNameSectionU3Ek__BackingField_25)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3COptionsU3Ek__BackingField_26)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____order_27)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CDeclaringTypeU3Ek__BackingField_28)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CCanSerializeU3Ek__BackingField_29)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CCanDeserializeU3Ek__BackingField_30)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CSrcGen_HasJsonIncludeU3Ek__BackingField_31)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CSrcGen_IsPublicU3Ek__BackingField_32)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CDeclaringTypeNumberHandlingU3Ek__BackingField_33)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____numberHandling_34)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CEffectiveNumberHandlingU3Ek__BackingField_35)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____index_36)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8934[3] = 
+	0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8905[8] = 
+{
+	static_cast<int32_t>(offsetof(JsonConverter_tF959B6D2A456224E540D105EF06DF3821371E8F8, ___U3CCanUseDirectReadOrWriteU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(JsonConverter_tF959B6D2A456224E540D105EF06DF3821371E8F8, ___U3CCanBePolymorphicU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(JsonConverter_tF959B6D2A456224E540D105EF06DF3821371E8F8, ___U3CRequiresReadAheadU3Ek__BackingField_2)),static_cast<int32_t>(offsetof(JsonConverter_tF959B6D2A456224E540D105EF06DF3821371E8F8, ___U3CIsValueTypeU3Ek__BackingField_3)),static_cast<int32_t>(offsetof(JsonConverter_tF959B6D2A456224E540D105EF06DF3821371E8F8, ___U3CIsInternalConverterU3Ek__BackingField_4)),static_cast<int32_t>(offsetof(JsonConverter_tF959B6D2A456224E540D105EF06DF3821371E8F8, ___IsInternalConverterForNumberType_5)),static_cast<int32_t>(offsetof(JsonConverter_tF959B6D2A456224E540D105EF06DF3821371E8F8, ___U3CConstructorIsParameterizedU3Ek__BackingField_6)),static_cast<int32_t>(offsetof(JsonConverter_tF959B6D2A456224E540D105EF06DF3821371E8F8, ___U3CConstructorInfoU3Ek__BackingField_7)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8907[3] = 
 {
 	0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8935[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8909[3] = 
+{
+	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8911[3] = 
+{
+	static_cast<int32_t>(offsetof(PreserveReferenceResolver_t8141089A4BA27C8D607AE9AF095C4F0DD33C38A0, ____referenceCount_0)),static_cast<int32_t>(offsetof(PreserveReferenceResolver_t8141089A4BA27C8D607AE9AF095C4F0DD33C38A0, ____referenceIdToObjectMap_1)),static_cast<int32_t>(offsetof(PreserveReferenceResolver_t8141089A4BA27C8D607AE9AF095C4F0DD33C38A0, ____objectToReferenceIdMap_2)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8912[3] = 
+{
+	static_cast<int32_t>(offsetof(ReferenceHandler_t1630C9ADF53E934E6EE593185A0B1C4CFCED6FD5, ___HandlingStrategy_0)),static_cast<int32_t>(offsetof(ReferenceHandler_t1630C9ADF53E934E6EE593185A0B1C4CFCED6FD5_StaticFields, ___U3CPreserveU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(ReferenceHandler_t1630C9ADF53E934E6EE593185A0B1C4CFCED6FD5_StaticFields, ___U3CIgnoreCyclesU3Ek__BackingField_2)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8913[4] = 
+{
+	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8915[1] = 
+{
+	static_cast<int32_t>(offsetof(ModifierCollection_tD823A18381453E8C622F518E776C9A17EE3F0CD1, ____resolver_1)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8916[1] = 
+{
+	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass3_0_t1B30937DFDCE44A8AE783738C072D3509F234A0B, ___converters_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8917[5] = 
+{
+	static_cast<int32_t>(offsetof(DefaultJsonTypeInfoResolver_tF649D304F2D6E844D1CA13BAE1B05A06FDE0BC9F_StaticFields, ___s_defaultSimpleConverters_0)),static_cast<int32_t>(offsetof(DefaultJsonTypeInfoResolver_tF649D304F2D6E844D1CA13BAE1B05A06FDE0BC9F_StaticFields, ___s_defaultFactoryConverters_1)),static_cast<int32_t>(offsetof(DefaultJsonTypeInfoResolver_tF649D304F2D6E844D1CA13BAE1B05A06FDE0BC9F, ____mutable_2)),static_cast<int32_t>(offsetof(DefaultJsonTypeInfoResolver_tF649D304F2D6E844D1CA13BAE1B05A06FDE0BC9F, ____modifiers_3)),static_cast<int32_t>(offsetof(DefaultJsonTypeInfoResolver_tF649D304F2D6E844D1CA13BAE1B05A06FDE0BC9F_StaticFields, ___s_defaultInstance_4)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8919[2] = 
+{
+	static_cast<int32_t>(offsetof(JsonDerivedType_t1EF5EFFD3AE4B94BDFD7270BBA785AB9BE7530F1, ___U3CDerivedTypeU3Ek__BackingField_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(JsonDerivedType_t1EF5EFFD3AE4B94BDFD7270BBA785AB9BE7530F1, ___U3CTypeDiscriminatorU3Ek__BackingField_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8920[1] = 
+{
+	static_cast<int32_t>(offsetof(DerivedTypeList_tEC356F74204BEB197872F49A2539DBCA2E2223E0, ____parent_1)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8921[5] = 
+{
+	static_cast<int32_t>(offsetof(JsonPolymorphismOptions_tF55EC24F1E058D2AA0FC4FE4366AA3CF483642FA, ____derivedTypes_0)),static_cast<int32_t>(offsetof(JsonPolymorphismOptions_tF55EC24F1E058D2AA0FC4FE4366AA3CF483642FA, ____ignoreUnrecognizedTypeDiscriminators_1)),static_cast<int32_t>(offsetof(JsonPolymorphismOptions_tF55EC24F1E058D2AA0FC4FE4366AA3CF483642FA, ____unknownDerivedTypeHandling_2)),static_cast<int32_t>(offsetof(JsonPolymorphismOptions_tF55EC24F1E058D2AA0FC4FE4366AA3CF483642FA, ____typeDiscriminatorPropertyName_3)),static_cast<int32_t>(offsetof(JsonPolymorphismOptions_tF55EC24F1E058D2AA0FC4FE4366AA3CF483642FA, ___U3CDeclaringTypeInfoU3Ek__BackingField_4)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8922[1] = 
+{
+	static_cast<int32_t>(offsetof(CombiningJsonTypeInfoResolver_t11463B96A3D0B6AB8BCA2DA5F3721E4E929C0B44, ____resolvers_0)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8924[5] = 
+{
+	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8925[9] = 
+{
+	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,0,0,0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8927[13] = 
+{
+	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,0,0,0,0,0,0,0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8928[11] = 
+{
+	static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE_StaticFields, ___s_singletonInstance_0)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____compilationMappingAttributeType_1)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____sourceConstructFlagsGetter_2)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____fsharpOptionType_3)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____fsharpValueOptionType_4)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____fsharpListType_5)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____fsharpSetType_6)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____fsharpMapType_7)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____fsharpListCtor_8)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____fsharpSetCtor_9)),static_cast<int32_t>(offsetof(FSharpCoreReflectionProxy_t385EFC784002B044208B96FD728822B16F04D9DE, ____fsharpMapCtor_10)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8929[1] = 
+{
+	static_cast<int32_t>(offsetof(DefaultValueHolder_tA77ECED936D1A6D62C025A3542D2542AE5CA5FEF, ___U3CDefaultValueU3Ek__BackingField_0)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8930[24] = 
+{
+	static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_booleanConverter_0)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_byteArrayConverter_1)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_byteConverter_2)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_charConverter_3)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_dateTimeConverter_4)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_dateTimeOffsetConverter_5)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_decimalConverter_6)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_doubleConverter_7)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_guidConverter_8)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_int16Converter_9)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_int32Converter_10)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_int64Converter_11)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_jsonElementConverter_12)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_jsonDocumentConverter_13)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_objectConverter_14)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_singleConverter_15)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_sbyteConverter_16)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_stringConverter_17)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_timeSpanConverter_18)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_uint16Converter_19)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_uint32Converter_20)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_uint64Converter_21)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_uriConverter_22)),static_cast<int32_t>(offsetof(JsonMetadataServices_t44E0DC9D62D6536630FE9616AA0BF0800C1FDB63_StaticFields, ___s_versionConverter_23)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8931[5] = 
+{
+	static_cast<int32_t>(offsetof(JsonParameterInfoValues_t5B41873BA178CBAD84E20EB3572D331B8C981776, ___U3CNameU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(JsonParameterInfoValues_t5B41873BA178CBAD84E20EB3572D331B8C981776, ___U3CParameterTypeU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(JsonParameterInfoValues_t5B41873BA178CBAD84E20EB3572D331B8C981776, ___U3CPositionU3Ek__BackingField_2)),static_cast<int32_t>(offsetof(JsonParameterInfoValues_t5B41873BA178CBAD84E20EB3572D331B8C981776, ___U3CHasDefaultValueU3Ek__BackingField_3)),static_cast<int32_t>(offsetof(JsonParameterInfoValues_t5B41873BA178CBAD84E20EB3572D331B8C981776, ___U3CDefaultValueU3Ek__BackingField_4)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8932[12] = 
+{
+	static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ____jsonTypeInfo_0)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3CConverterBaseU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3CMatchingPropertyCanBeNullU3Ek__BackingField_2)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3CDefaultValueU3Ek__BackingField_3)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3CIgnoreNullTokensOnReadU3Ek__BackingField_4)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3COptionsU3Ek__BackingField_5)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3CNameAsUtf8BytesU3Ek__BackingField_6)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3CNumberHandlingU3Ek__BackingField_7)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___ClrInfo_8)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3CPropertyTypeU3Ek__BackingField_9)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3CShouldDeserializeU3Ek__BackingField_10)),static_cast<int32_t>(offsetof(JsonParameterInfo_t45C8BCDFD6A660285681888FCB559CC21DFED94D, ___U3CMatchingPropertyU3Ek__BackingField_11)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8933[1] = 
 {
 	0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8934[37] = 
+{
+	static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E_StaticFields, ___s_missingProperty_0)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CParentTypeInfoU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____jsonTypeInfo_2)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CConverterStrategyU3Ek__BackingField_3)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____effectiveConverter_4)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____customConverter_5)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____untypedGet_6)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____untypedSet_7)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____isUserSpecifiedSetter_8)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____shouldSerialize_9)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____isUserSpecifiedShouldSerialize_10)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____ignoreCondition_11)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____attributeProvider_12)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CMemberNameU3Ek__BackingField_13)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CMemberTypeU3Ek__BackingField_14)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CIsVirtualU3Ek__BackingField_15)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____isExtensionDataProperty_16)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____isRequired_17)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CPropertyTypeU3Ek__BackingField_18)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____isConfigured_19)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CIgnoreNullTokensOnReadU3Ek__BackingField_20)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CIgnoreDefaultValuesOnWriteU3Ek__BackingField_21)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CIsForTypeInfoU3Ek__BackingField_22)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____name_23)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CNameAsUtf8BytesU3Ek__BackingField_24)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CEscapedNameSectionU3Ek__BackingField_25)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3COptionsU3Ek__BackingField_26)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____order_27)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CDeclaringTypeU3Ek__BackingField_28)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CCanSerializeU3Ek__BackingField_29)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CCanDeserializeU3Ek__BackingField_30)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CSrcGen_HasJsonIncludeU3Ek__BackingField_31)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CSrcGen_IsPublicU3Ek__BackingField_32)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CDeclaringTypeNumberHandlingU3Ek__BackingField_33)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____numberHandling_34)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ___U3CEffectiveNumberHandlingU3Ek__BackingField_35)),static_cast<int32_t>(offsetof(JsonPropertyInfo_t8870BF608DD0641AC29D55C6747C5C5C7340876E, ____index_36)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8935[3] = 
+{
+	0,0,0,};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8936[1] = 
 {
 	0,};
@@ -37478,69 +37479,69 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8939[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8940[1] = 
 {
 	0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8941[4] = 
-{
-	0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8942[13] = 
-{
-	0,0,0,0,0,0,0,0,0,0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8943[5] = 
-{
-	0,0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8944[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8941[1] = 
 {
 	0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8942[4] = 
+{
+	0,0,0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8943[13] = 
+{
+	0,0,0,0,0,0,0,0,0,0,0,0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8944[5] = 
+{
+	0,0,0,0,0,};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8945[1] = 
 {
 	0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8946[3] = 
-{
-	0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8948[2] = 
-{
-	static_cast<int32_t>(offsetof(ParameterLookupKey_t2B79F3DF5BB5408366BA1D4B023BB544F5B090F8, ___U3CNameU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(ParameterLookupKey_t2B79F3DF5BB5408366BA1D4B023BB544F5B090F8, ___U3CTypeU3Ek__BackingField_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8949[2] = 
-{
-	static_cast<int32_t>(offsetof(ParameterLookupValue_tEB7EA0DF3DC6E5E8CFA652FCD2423FACD32C59E3, ___U3CDuplicateNameU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(ParameterLookupValue_tEB7EA0DF3DC6E5E8CFA652FCD2423FACD32C59E3, ___U3CJsonPropertyInfoU3Ek__BackingField_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8950[1] = 
-{
-	static_cast<int32_t>(offsetof(JsonPropertyInfoList_t559670532AA4F70A32B7E6209DC3B73A89794329, ____jsonTypeInfo_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8951[2] = 
-{
-	static_cast<int32_t>(offsetof(U3CU3Ec_tAEEB22E5C5CA12E925F018AC80F69DFA5D8C9F6B_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_tAEEB22E5C5CA12E925F018AC80F69DFA5D8C9F6B_StaticFields, ___U3CU3E9__154_0_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8952[36] = 
-{
-	static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36_StaticFields, ___ObjectType_0)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CParameterCountU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CParameterCacheU3Ek__BackingField_2)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CPropertyCacheU3Ek__BackingField_3)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____parameterRefsSorted_4)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____propertyRefsSorted_5)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____properties_6)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CNumberOfRequiredPropertiesU3Ek__BackingField_7)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____onSerializing_8)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____onSerialized_9)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____onDeserializing_10)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____onDeserialized_11)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____createObject_12)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CCreateObjectForExtensionDataPropertyU3Ek__BackingField_13)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CIsReadOnlyU3Ek__BackingField_14)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____polymorphismOptions_15)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CCreateObjectWithArgsU3Ek__BackingField_16)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CAddMethodDelegateU3Ek__BackingField_17)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CExtensionDataPropertyU3Ek__BackingField_18)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CPolymorphicTypeResolverU3Ek__BackingField_19)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____elementTypeInfo_20)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CCanUseSerializeHandlerU3Ek__BackingField_21)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CMetadataSerializationNotSupportedU3Ek__BackingField_22)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CElementTypeU3Ek__BackingField_23)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____keyTypeInfo_24)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CKeyTypeU3Ek__BackingField_25)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3COptionsU3Ek__BackingField_26)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CTypeU3Ek__BackingField_27)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CConverterU3Ek__BackingField_28)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CKindU3Ek__BackingField_29)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CPropertyInfoForTypeInfoU3Ek__BackingField_30)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____defaultValueHolder_31)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____numberHandling_32)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____isConfigured_33)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____configureLock_34)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____cachedConfigureError_35)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8954[3] = 
-{
-	static_cast<int32_t>(offsetof(ParameterRef_tA842D9CDC9FF6DDF197615051AC940B647E3D117, ___Key_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ParameterRef_tA842D9CDC9FF6DDF197615051AC940B647E3D117, ___Info_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ParameterRef_tA842D9CDC9FF6DDF197615051AC940B647E3D117, ___NameFromJson_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8955[3] = 
-{
-	static_cast<int32_t>(offsetof(DerivedJsonTypeInfo_t262F4A7586C59517944FBE34E0336C5115E1A49A, ____jsonTypeInfo_0)),static_cast<int32_t>(offsetof(DerivedJsonTypeInfo_t262F4A7586C59517944FBE34E0336C5115E1A49A, ___U3CDerivedTypeU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(DerivedJsonTypeInfo_t262F4A7586C59517944FBE34E0336C5115E1A49A, ___U3CTypeDiscriminatorU3Ek__BackingField_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8956[9] = 
-{
-	static_cast<int32_t>(offsetof(PolymorphicTypeResolver_t0CA46326FE9B18BFE197858372BD452697A02A51, ____declaringTypeInfo_0)),static_cast<int32_t>(offsetof(PolymorphicTypeResolver_t0CA46326FE9B18BFE197858372BD452697A02A51, ____typeToDiscriminatorId_1)),static_cast<int32_t>(offsetof(PolymorphicTypeResolver_t0CA46326FE9B18BFE197858372BD452697A02A51, ____discriminatorIdtoType_2)),static_cast<int32_t>(offsetof(PolymorphicTypeResolver_t0CA46326FE9B18BFE197858372BD452697A02A51, ___U3CUnknownDerivedTypeHandlingU3Ek__BackingField_3)),static_cast<int32_t>(offsetof(PolymorphicTypeResolver_t0CA46326FE9B18BFE197858372BD452697A02A51, ___U3CUsesTypeDiscriminatorsU3Ek__BackingField_4)),static_cast<int32_t>(offsetof(PolymorphicTypeResolver_t0CA46326FE9B18BFE197858372BD452697A02A51, ___U3CIgnoreUnrecognizedTypeDiscriminatorsU3Ek__BackingField_5)),static_cast<int32_t>(offsetof(PolymorphicTypeResolver_t0CA46326FE9B18BFE197858372BD452697A02A51, ___U3CTypeDiscriminatorPropertyNameU3Ek__BackingField_6)),static_cast<int32_t>(offsetof(PolymorphicTypeResolver_t0CA46326FE9B18BFE197858372BD452697A02A51, ___U3CTypeDiscriminatorPropertyNameUtf8U3Ek__BackingField_7)),static_cast<int32_t>(offsetof(PolymorphicTypeResolver_t0CA46326FE9B18BFE197858372BD452697A02A51, ___U3CCustomTypeDiscriminatorPropertyNameJsonEncodedU3Ek__BackingField_8)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8957[3] = 
-{
-	static_cast<int32_t>(offsetof(PropertyRef_t6F3DCA5A0DEBB543DAFAE13FB6ED6FBF92F894A7, ___Key_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(PropertyRef_t6F3DCA5A0DEBB543DAFAE13FB6ED6FBF92F894A7, ___Info_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(PropertyRef_t6F3DCA5A0DEBB543DAFAE13FB6ED6FBF92F894A7, ___NameFromJson_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8958[2] = 
-{
-	0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8960[1] = 
-{
-	static_cast<int32_t>(offsetof(ConstructorContext_t4A8514BECF6D98556EA65FB92F6E3D09BAFB2F96, ____type_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8961[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8946[1] = 
 {
 	0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8962[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8947[3] = 
+{
+	0,0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8949[2] = 
+{
+	static_cast<int32_t>(offsetof(ParameterLookupKey_t2B79F3DF5BB5408366BA1D4B023BB544F5B090F8, ___U3CNameU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(ParameterLookupKey_t2B79F3DF5BB5408366BA1D4B023BB544F5B090F8, ___U3CTypeU3Ek__BackingField_1)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8950[2] = 
+{
+	static_cast<int32_t>(offsetof(ParameterLookupValue_tEB7EA0DF3DC6E5E8CFA652FCD2423FACD32C59E3, ___U3CDuplicateNameU3Ek__BackingField_0)),static_cast<int32_t>(offsetof(ParameterLookupValue_tEB7EA0DF3DC6E5E8CFA652FCD2423FACD32C59E3, ___U3CJsonPropertyInfoU3Ek__BackingField_1)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8951[1] = 
+{
+	static_cast<int32_t>(offsetof(JsonPropertyInfoList_t559670532AA4F70A32B7E6209DC3B73A89794329, ____jsonTypeInfo_1)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8952[2] = 
+{
+	static_cast<int32_t>(offsetof(U3CU3Ec_tAEEB22E5C5CA12E925F018AC80F69DFA5D8C9F6B_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_tAEEB22E5C5CA12E925F018AC80F69DFA5D8C9F6B_StaticFields, ___U3CU3E9__154_0_1)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8953[36] = 
+{
+	static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36_StaticFields, ___ObjectType_0)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CParameterCountU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CParameterCacheU3Ek__BackingField_2)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CPropertyCacheU3Ek__BackingField_3)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____parameterRefsSorted_4)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____propertyRefsSorted_5)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____properties_6)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CNumberOfRequiredPropertiesU3Ek__BackingField_7)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____onSerializing_8)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____onSerialized_9)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____onDeserializing_10)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____onDeserialized_11)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____createObject_12)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CCreateObjectForExtensionDataPropertyU3Ek__BackingField_13)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CIsReadOnlyU3Ek__BackingField_14)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____polymorphismOptions_15)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CCreateObjectWithArgsU3Ek__BackingField_16)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CAddMethodDelegateU3Ek__BackingField_17)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CExtensionDataPropertyU3Ek__BackingField_18)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CPolymorphicTypeResolverU3Ek__BackingField_19)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____elementTypeInfo_20)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CCanUseSerializeHandlerU3Ek__BackingField_21)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CMetadataSerializationNotSupportedU3Ek__BackingField_22)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CElementTypeU3Ek__BackingField_23)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____keyTypeInfo_24)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CKeyTypeU3Ek__BackingField_25)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3COptionsU3Ek__BackingField_26)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CTypeU3Ek__BackingField_27)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CConverterU3Ek__BackingField_28)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CKindU3Ek__BackingField_29)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ___U3CPropertyInfoForTypeInfoU3Ek__BackingField_30)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____defaultValueHolder_31)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____numberHandling_32)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____isConfigured_33)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____configureLock_34)),static_cast<int32_t>(offsetof(JsonTypeInfo_tA6F51E32955C59782B075F76F6918E5B97598C36, ____cachedConfigureError_35)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8955[3] = 
+{
+	static_cast<int32_t>(offsetof(ParameterRef_tA842D9CDC9FF6DDF197615051AC940B647E3D117, ___Key_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ParameterRef_tA842D9CDC9FF6DDF197615051AC940B647E3D117, ___Info_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(ParameterRef_tA842D9CDC9FF6DDF197615051AC940B647E3D117, ___NameFromJson_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8956[3] = 
+{
+	static_cast<int32_t>(offsetof(DerivedJsonTypeInfo_t262F4A7586C59517944FBE34E0336C5115E1A49A, ____jsonTypeInfo_0)),static_cast<int32_t>(offsetof(DerivedJsonTypeInfo_t262F4A7586C59517944FBE34E0336C5115E1A49A, ___U3CDerivedTypeU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(DerivedJsonTypeInfo_t262F4A7586C59517944FBE34E0336C5115E1A49A, ___U3CTypeDiscriminatorU3Ek__BackingField_2)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8957[9] = 
+{
+	static_cast<int32_t>(offsetof(PolymorphicTypeResolver_t0CA46326FE9B18BFE197858372BD452697A02A51, ____declaringTypeInfo_0)),static_cast<int32_t>(offsetof(PolymorphicTypeResolver_t0CA46326FE9B18BFE197858372BD452697A02A51, ____typeToDiscriminatorId_1)),static_cast<int32_t>(offsetof(PolymorphicTypeResolver_t0CA46326FE9B18BFE197858372BD452697A02A51, ____discriminatorIdtoType_2)),static_cast<int32_t>(offsetof(PolymorphicTypeResolver_t0CA46326FE9B18BFE197858372BD452697A02A51, ___U3CUnknownDerivedTypeHandlingU3Ek__BackingField_3)),static_cast<int32_t>(offsetof(PolymorphicTypeResolver_t0CA46326FE9B18BFE197858372BD452697A02A51, ___U3CUsesTypeDiscriminatorsU3Ek__BackingField_4)),static_cast<int32_t>(offsetof(PolymorphicTypeResolver_t0CA46326FE9B18BFE197858372BD452697A02A51, ___U3CIgnoreUnrecognizedTypeDiscriminatorsU3Ek__BackingField_5)),static_cast<int32_t>(offsetof(PolymorphicTypeResolver_t0CA46326FE9B18BFE197858372BD452697A02A51, ___U3CTypeDiscriminatorPropertyNameU3Ek__BackingField_6)),static_cast<int32_t>(offsetof(PolymorphicTypeResolver_t0CA46326FE9B18BFE197858372BD452697A02A51, ___U3CTypeDiscriminatorPropertyNameUtf8U3Ek__BackingField_7)),static_cast<int32_t>(offsetof(PolymorphicTypeResolver_t0CA46326FE9B18BFE197858372BD452697A02A51, ___U3CCustomTypeDiscriminatorPropertyNameJsonEncodedU3Ek__BackingField_8)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8958[3] = 
+{
+	static_cast<int32_t>(offsetof(PropertyRef_t6F3DCA5A0DEBB543DAFAE13FB6ED6FBF92F894A7, ___Key_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(PropertyRef_t6F3DCA5A0DEBB543DAFAE13FB6ED6FBF92F894A7, ___Info_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(PropertyRef_t6F3DCA5A0DEBB543DAFAE13FB6ED6FBF92F894A7, ___NameFromJson_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8959[2] = 
 {
 	0,0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8961[1] = 
+{
+	static_cast<int32_t>(offsetof(ConstructorContext_t4A8514BECF6D98556EA65FB92F6E3D09BAFB2F96, ____type_0)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8962[1] = 
+{
+	0,};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8963[2] = 
 {
 	0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8964[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8964[2] = 
 {
-	0,};
+	0,0,};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8965[1] = 
 {
 	0,};
@@ -37550,39 +37551,42 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8966[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8967[1] = 
 {
 	0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8969[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8968[1] = 
 {
 	0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8973[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8970[1] = 
+{
+	0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8974[2] = 
 {
 	0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8980[7] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8981[7] = 
 {
 	0,0,0,0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8981[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8982[1] = 
 {
 	0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8983[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8984[2] = 
 {
 	0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8985[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8986[2] = 
 {
 	0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8987[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8988[2] = 
 {
 	0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8989[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8990[1] = 
 {
 	0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8990[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8991[3] = 
 {
 	static_cast<int32_t>(offsetof(IEnumerableConverterFactory_t26A488F0DC9D24A7CECDAB9733427151240AD83B_StaticFields, ___s_converterForIDictionary_8)),static_cast<int32_t>(offsetof(IEnumerableConverterFactory_t26A488F0DC9D24A7CECDAB9733427151240AD83B_StaticFields, ___s_converterForIEnumerable_9)),static_cast<int32_t>(offsetof(IEnumerableConverterFactory_t26A488F0DC9D24A7CECDAB9733427151240AD83B_StaticFields, ___s_converterForIList_10)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8992[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8993[1] = 
 {
 	0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8994[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8995[2] = 
 {
 	0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8996[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8997[2] = 
 {
 	0,0,};

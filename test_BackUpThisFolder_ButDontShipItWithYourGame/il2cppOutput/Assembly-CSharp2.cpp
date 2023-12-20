@@ -1197,6 +1197,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralA8D674489B3161E85850FC058A235F85C026061E
 IL2CPP_EXTERN_C String_t* _stringLiteralA9145BA894AC681C06F6E921F9054DBC4A6037E9;
 IL2CPP_EXTERN_C String_t* _stringLiteralB2BD0B058A23B10E00E5D12DB253C054F1D571E1;
 IL2CPP_EXTERN_C String_t* _stringLiteralB3959F17E24B23C57ED29A79C653091BC73F5B12;
+IL2CPP_EXTERN_C String_t* _stringLiteralB4A8055F09CBC8C21323356FAB66E11791D408ED;
 IL2CPP_EXTERN_C String_t* _stringLiteralB91C0B9B01341768775B9133B367C86C196061C8;
 IL2CPP_EXTERN_C String_t* _stringLiteralB92EF51E45166C91E2762DB6C9F27C8BD6EBE466;
 IL2CPP_EXTERN_C String_t* _stringLiteralBAEB86B408E931CE2BB53E3D0839576F5491514F;
@@ -1224,6 +1225,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralD9691C4FD8A1F6B09DB1147CA32B442772FB46A1
 IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 IL2CPP_EXTERN_C String_t* _stringLiteralDC13B4C476B8FC76AE8130BB2A7AFFEB9B0A2035;
 IL2CPP_EXTERN_C String_t* _stringLiteralDD6065F6BEE8EC9D2DE042E63D3ABB71AA1D0A38;
+IL2CPP_EXTERN_C String_t* _stringLiteralE0882D510ED7ED20671CA1070B8AB346B9E9E1D3;
 IL2CPP_EXTERN_C String_t* _stringLiteralE166C9564FBDE461738077E3B1B506525EB6ACCC;
 IL2CPP_EXTERN_C String_t* _stringLiteralE1A7322B276BCACAFC874B2E3FDEA4CC12C8B4BE;
 IL2CPP_EXTERN_C String_t* _stringLiteralE755D2F00264DA21CC8DFE5A4AAB38D717216A63;
@@ -1366,6 +1368,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m2817F5F47727C2C1FB87CE382
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m3DD9A07FC3D20F30E701AADF56032199D667F8FC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_mA20F5C4ABD8A3ADDAA7B3D1EF1A20A1A31273687_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m5BABE1644AE4925547F413C692E38B1E1CE23DA3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mE9F3E658D94C48F9878EB23AE3817A3560E57CA6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mFCBCB25114B3318350A5D5589E3C3CD6678B1D3E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_set_Item_m484C057273252CE4F17D75656921CF8E811D4921_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* MainScript_U3CDeleteU3Eb__6_0_mE673244BD58CDAD546C09353881D692320ABDBD4_RuntimeMethod_var;
@@ -1977,8 +1980,8 @@ struct EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_StaticFields
 // FlightsEmbeddedField
 struct FlightsEmbeddedField_t9EABA8F5002B4490539D9EEF57387A25CCF64D27  : public RuntimeObject
 {
-	// System.String FlightsEmbeddedField::flag
-	String_t* ___flag_0;
+	// System.String FlightsEmbeddedField::reg_number
+	String_t* ___reg_number_0;
 	// System.Single FlightsEmbeddedField::lat
 	float ___lat_1;
 	// System.Single FlightsEmbeddedField::lng
@@ -6079,24 +6082,20 @@ struct FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34  : public MonoBeha
 {
 	// System.String FlightStatus::reg_number
 	String_t* ___reg_number_4;
-	// System.String FlightStatus::manufacturer
-	String_t* ___manufacturer_5;
 	// System.String FlightStatus::airline
-	String_t* ___airline_6;
-	// System.Int32 FlightStatus::flight_number
-	int32_t ___flight_number_7;
+	String_t* ___airline_5;
 	// System.Single FlightStatus::lat
-	float ___lat_8;
+	float ___lat_6;
 	// System.Single FlightStatus::lng
-	float ___lng_9;
+	float ___lng_7;
 	// System.Single FlightStatus::alt
-	float ___alt_10;
+	float ___alt_8;
 	// System.Single FlightStatus::dir
-	float ___dir_11;
+	float ___dir_9;
 	// System.Single FlightStatus::speed
-	float ___speed_12;
+	float ___speed_10;
 	// System.Single FlightStatus::duration
-	float ___duration_13;
+	float ___duration_11;
 };
 
 // FurnitureSpawner
@@ -6133,14 +6132,26 @@ struct GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F  : public MonoBehavi
 	String_t* ___endpoint_airport_6;
 	// System.String GetApiData::endpoint_flights
 	String_t* ___endpoint_flights_7;
+	// System.Single GetApiData::radius
+	float ___radius_8;
 	// System.Boolean GetApiData::isAirport
-	bool ___isAirport_8;
+	bool ___isAirport_9;
 	// airports GetApiData::AirpotsResponse
-	airports_tA14B57977CE40A655B12F0ACFCA13076122D21C7* ___AirpotsResponse_9;
+	airports_tA14B57977CE40A655B12F0ACFCA13076122D21C7* ___AirpotsResponse_10;
 	// flights GetApiData::FlightResponse
-	flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* ___FlightResponse_10;
+	flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* ___FlightResponse_11;
+	// UnityEngine.GameObject GetApiData::GlobalSystem
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___GlobalSystem_12;
 	// System.String GetApiData::newURL
-	String_t* ___newURL_11;
+	String_t* ___newURL_13;
+	// System.Single GetApiData::latitude
+	float ___latitude_14;
+	// System.Single GetApiData::longitude
+	float ___longitude_15;
+	// System.Single GetApiData::altitude
+	float ___altitude_16;
+	// System.Single GetApiData::direction
+	float ___direction_17;
 };
 
 // LocalizedHaptics
@@ -10316,9 +10327,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RestResponse_t1D39167CB052A264EC9A6241318FA18
 // System.String RestSharp.RestResponseBase::get_Content()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* RestResponseBase_get_Content_m39C8C001BA5C2FE2435B3004CEB07FCF328D0EA5_inline (RestResponseBase_t1ADD5A0ACE702B92C254B0B640BED725A5C98B9C* __this, const RuntimeMethod* method) ;
 // airports GetApiData::AirportsResponse(RestSharp.RestResponse)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR airports_tA14B57977CE40A655B12F0ACFCA13076122D21C7* GetApiData_AirportsResponse_mE94A6A5C257215A36A51C878414A0D5589B96992 (RestResponse_t1D39167CB052A264EC9A6241318FA1848ADACF0A* ___response0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR airports_tA14B57977CE40A655B12F0ACFCA13076122D21C7* GetApiData_AirportsResponse_m14836DE3BBC5EB250F52AF96A4704A8DD9614B09 (GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F* __this, RestResponse_t1D39167CB052A264EC9A6241318FA1848ADACF0A* ___response0, const RuntimeMethod* method) ;
 // flights GetApiData::FlightsResponse(RestSharp.RestResponse)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* GetApiData_FlightsResponse_m8E725E868B0A7FE83C8D4BA13116383F6B9832B4 (RestResponse_t1D39167CB052A264EC9A6241318FA1848ADACF0A* ___response0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* GetApiData_FlightsResponse_mFB2824A664B0CEE76FBAD38B99F3B59BE03E5159 (GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F* __this, RestResponse_t1D39167CB052A264EC9A6241318FA1848ADACF0A* ___response0, const RuntimeMethod* method) ;
 // System.Int32 System.Collections.Generic.List`1<FlightsEmbeddedField>::get_Count()
 inline int32_t List_1_get_Count_mA20F5C4ABD8A3ADDAA7B3D1EF1A20A1A31273687_inline (List_1_t104BBB2C4B72609D6FA98412089B1E23487177B9* __this, const RuntimeMethod* method)
 {
@@ -10333,6 +10344,15 @@ inline airports_tA14B57977CE40A655B12F0ACFCA13076122D21C7* JsonConvert_Deseriali
 inline flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* JsonConvert_DeserializeObject_Tisflights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF_m14E8634DA029A044C2D317A7F8985BBE9F1C7DF9 (String_t* ___value0, const RuntimeMethod* method)
 {
 	return ((  flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* (*) (String_t*, const RuntimeMethod*))JsonConvert_DeserializeObject_TisRuntimeObject_m4AED5444440BFC03D3CB9506F186AC7C37B45EF2_gshared)(___value0, method);
+}
+// UnityEngine.GameObject UnityEngine.GameObject::FindGameObjectWithTag(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* GameObject_FindGameObjectWithTag_mF0229BC2074CE9EEA72FAB1E5A4BC2AEC3D2CDBE (String_t* ___tag0, const RuntimeMethod* method) ;
+// System.Void GetApiData::PlaneLocation(flights,UnityEngine.GameObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetApiData_PlaneLocation_m958CDC679C9F161FBD94A962A7F4E6811282D09A (GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F* __this, flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* ___flightResponse0, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___plane1, const RuntimeMethod* method) ;
+// T System.Collections.Generic.List`1<FlightsEmbeddedField>::get_Item(System.Int32)
+inline FlightsEmbeddedField_t9EABA8F5002B4490539D9EEF57387A25CCF64D27* List_1_get_Item_mE9F3E658D94C48F9878EB23AE3817A3560E57CA6 (List_1_t104BBB2C4B72609D6FA98412089B1E23487177B9* __this, int32_t ___index0, const RuntimeMethod* method)
+{
+	return ((  FlightsEmbeddedField_t9EABA8F5002B4490539D9EEF57387A25CCF64D27* (*) (List_1_t104BBB2C4B72609D6FA98412089B1E23487177B9*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___index0, method);
 }
 // System.String System.Single::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972 (float* __this, const RuntimeMethod* method) ;
@@ -24750,6 +24770,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetApiData_Start_m45DA11F30B68C4292BCF8A
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB4A8055F09CBC8C21323356FAB66E11791D408ED);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&airports_tA14B57977CE40A655B12F0ACFCA13076122D21C7_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
@@ -24759,14 +24781,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetApiData_Start_m45DA11F30B68C4292BCF8A
 		airports_tA14B57977CE40A655B12F0ACFCA13076122D21C7* L_0 = (airports_tA14B57977CE40A655B12F0ACFCA13076122D21C7*)il2cpp_codegen_object_new(airports_tA14B57977CE40A655B12F0ACFCA13076122D21C7_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
 		airports__ctor_m2C8F00523939075021DBAF9E3B655A96320AD566(L_0, NULL);
-		__this->___AirpotsResponse_9 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___AirpotsResponse_9), (void*)L_0);
+		__this->___AirpotsResponse_10 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___AirpotsResponse_10), (void*)L_0);
 		// FlightResponse = new flights();
 		flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* L_1 = (flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF*)il2cpp_codegen_object_new(flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF_il2cpp_TypeInfo_var);
 		NullCheck(L_1);
 		flights__ctor_mD20B943424847224601F1EFFC8A57C8CC714EA6D(L_1, NULL);
-		__this->___FlightResponse_10 = L_1;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___FlightResponse_10), (void*)L_1);
+		__this->___FlightResponse_11 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___FlightResponse_11), (void*)L_1);
+		// Debug.Log(message: $"READY TO FLY");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralB4A8055F09CBC8C21323356FAB66E11791D408ED, NULL);
 		// GetDataFromAirLabApi();
 		flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* L_2;
 		L_2 = GetApiData_GetDataFromAirLabApi_m1EC58F65AB0FBF85E9C4F90D09180205F6FBFA35(__this, NULL);
@@ -24787,152 +24812,99 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9C
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RestRequest_t0E790FD44E522945CF3F3CA22CEA4EDC1CB89C94_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral67ACE8DA0508E7407C37B4711C254D0B70D5E619);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE0882D510ED7ED20671CA1070B8AB346B9E9E1D3);
 		s_Il2CppMethodInitialized = true;
 	}
 	RestRequest_t0E790FD44E522945CF3F3CA22CEA4EDC1CB89C94* V_0 = NULL;
 	RestResponse_t1D39167CB052A264EC9A6241318FA1848ADACF0A* V_1 = NULL;
 	CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED V_2;
 	memset((&V_2), 0, sizeof(V_2));
-	String_t* G_B5_0 = NULL;
-	String_t* G_B4_0 = NULL;
-	String_t* G_B7_0 = NULL;
-	String_t* G_B6_0 = NULL;
+	String_t* G_B2_0 = NULL;
+	String_t* G_B1_0 = NULL;
 	{
-		// if (isAirport)
-		bool L_0 = __this->___isAirport_8;
-		if (!L_0)
-		{
-			goto IL_0027;
-		}
-	}
-	{
-		// newURL = string.Concat(apiUrl, endpoint_airport, apiKey);
-		String_t* L_1 = __this->___apiUrl_4;
-		String_t* L_2 = __this->___endpoint_airport_6;
-		String_t* L_3 = __this->___apiKey_5;
-		String_t* L_4;
-		L_4 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_1, L_2, L_3, NULL);
-		__this->___newURL_11 = L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___newURL_11), (void*)L_4);
-		goto IL_0044;
-	}
-
-IL_0027:
-	{
-		// newURL = string.Concat(apiUrl, endpoint_flights, apiKey);
-		String_t* L_5 = __this->___apiUrl_4;
-		String_t* L_6 = __this->___endpoint_flights_7;
-		String_t* L_7 = __this->___apiKey_5;
-		String_t* L_8;
-		L_8 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_5, L_6, L_7, NULL);
-		__this->___newURL_11 = L_8;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___newURL_11), (void*)L_8);
-	}
-
-IL_0044:
-	{
-		// Debug.Log($"{newURL}");
-		String_t* L_9 = __this->___newURL_11;
-		String_t* L_10 = L_9;
-		G_B4_0 = L_10;
-		if (L_10)
-		{
-			G_B5_0 = L_10;
-			goto IL_0053;
-		}
-	}
-	{
-		G_B5_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
-	}
-
-IL_0053:
-	{
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(G_B5_0, NULL);
-		// var client = new RestClient(newURL);
-		String_t* L_11 = __this->___newURL_11;
-		RestClient_tA3BF402CDC730D45A8916074415901878B1A3DAF* L_12 = (RestClient_tA3BF402CDC730D45A8916074415901878B1A3DAF*)il2cpp_codegen_object_new(RestClient_tA3BF402CDC730D45A8916074415901878B1A3DAF_il2cpp_TypeInfo_var);
-		NullCheck(L_12);
-		RestClient__ctor_mE196CA41AB63E2DC8CF62EFFD9108BC1E3A073E0(L_12, L_11, (ConfigureRestClient_t1030582F18DCF415AAB9E34129D63F2365AA7D4E*)NULL, (ConfigureHeaders_t8AC6419DC184521D5FD98A99699021F5D97C2F3B*)NULL, (ConfigureSerialization_t60D7D2A5A881E656B3B86B4361172244129BB30E*)NULL, NULL);
+		// var client = new RestClient("https://airlabs.co/api/v9/flights?airline_iata=UA,fields=reg_number,lat,lng,dir,alt&bbox=30,-90,37,-70&api_key=a206d42c-783a-494c-a21b-86bfaccdd9fd");
+		RestClient_tA3BF402CDC730D45A8916074415901878B1A3DAF* L_0 = (RestClient_tA3BF402CDC730D45A8916074415901878B1A3DAF*)il2cpp_codegen_object_new(RestClient_tA3BF402CDC730D45A8916074415901878B1A3DAF_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		RestClient__ctor_mE196CA41AB63E2DC8CF62EFFD9108BC1E3A073E0(L_0, _stringLiteralE0882D510ED7ED20671CA1070B8AB346B9E9E1D3, (ConfigureRestClient_t1030582F18DCF415AAB9E34129D63F2365AA7D4E*)NULL, (ConfigureHeaders_t8AC6419DC184521D5FD98A99699021F5D97C2F3B*)NULL, (ConfigureSerialization_t60D7D2A5A881E656B3B86B4361172244129BB30E*)NULL, NULL);
 		// var request = new RestRequest();
-		RestRequest_t0E790FD44E522945CF3F3CA22CEA4EDC1CB89C94* L_13 = (RestRequest_t0E790FD44E522945CF3F3CA22CEA4EDC1CB89C94*)il2cpp_codegen_object_new(RestRequest_t0E790FD44E522945CF3F3CA22CEA4EDC1CB89C94_il2cpp_TypeInfo_var);
-		NullCheck(L_13);
-		RestRequest__ctor_m022B7A87D3931618248D8116811B7C82879B1C5C(L_13, NULL);
-		V_0 = L_13;
+		RestRequest_t0E790FD44E522945CF3F3CA22CEA4EDC1CB89C94* L_1 = (RestRequest_t0E790FD44E522945CF3F3CA22CEA4EDC1CB89C94*)il2cpp_codegen_object_new(RestRequest_t0E790FD44E522945CF3F3CA22CEA4EDC1CB89C94_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		RestRequest__ctor_m022B7A87D3931618248D8116811B7C82879B1C5C(L_1, NULL);
+		V_0 = L_1;
 		// RestResponse response = client.Execute(request);
-		RestRequest_t0E790FD44E522945CF3F3CA22CEA4EDC1CB89C94* L_14 = V_0;
+		RestRequest_t0E790FD44E522945CF3F3CA22CEA4EDC1CB89C94* L_2 = V_0;
 		il2cpp_codegen_initobj((&V_2), sizeof(CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED));
-		CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED L_15 = V_2;
-		RestResponse_t1D39167CB052A264EC9A6241318FA1848ADACF0A* L_16;
-		L_16 = RestClientExtensions_Execute_m6F8D8F79F6025CC772981C94FAF2C2F40D0FF93C(L_12, L_14, L_15, NULL);
-		V_1 = L_16;
+		CancellationToken_t51142D9C6D7C02D314DA34A6A7988C528992FFED L_3 = V_2;
+		RestResponse_t1D39167CB052A264EC9A6241318FA1848ADACF0A* L_4;
+		L_4 = RestClientExtensions_Execute_m6F8D8F79F6025CC772981C94FAF2C2F40D0FF93C(L_0, L_2, L_3, NULL);
+		V_1 = L_4;
 		// Debug.Log(message: $"{response.Content}");
-		RestResponse_t1D39167CB052A264EC9A6241318FA1848ADACF0A* L_17 = V_1;
-		NullCheck(L_17);
-		String_t* L_18;
-		L_18 = RestResponseBase_get_Content_m39C8C001BA5C2FE2435B3004CEB07FCF328D0EA5_inline(L_17, NULL);
-		String_t* L_19 = L_18;
-		G_B6_0 = L_19;
-		if (L_19)
+		RestResponse_t1D39167CB052A264EC9A6241318FA1848ADACF0A* L_5 = V_1;
+		NullCheck(L_5);
+		String_t* L_6;
+		L_6 = RestResponseBase_get_Content_m39C8C001BA5C2FE2435B3004CEB07FCF328D0EA5_inline(L_5, NULL);
+		String_t* L_7 = L_6;
+		G_B1_0 = L_7;
+		if (L_7)
 		{
-			G_B7_0 = L_19;
-			goto IL_008b;
+			G_B2_0 = L_7;
+			goto IL_0032;
 		}
 	}
 	{
-		G_B7_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+		G_B2_0 = _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 	}
 
-IL_008b:
+IL_0032:
 	{
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(G_B7_0, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(G_B2_0, NULL);
 		// if (isAirport)
-		bool L_20 = __this->___isAirport_8;
-		if (!L_20)
+		bool L_8 = __this->___isAirport_9;
+		if (!L_8)
 		{
-			goto IL_00a6;
+			goto IL_004e;
 		}
 	}
 	{
 		// AirpotsResponse = AirportsResponse(response);
-		RestResponse_t1D39167CB052A264EC9A6241318FA1848ADACF0A* L_21 = V_1;
-		airports_tA14B57977CE40A655B12F0ACFCA13076122D21C7* L_22;
-		L_22 = GetApiData_AirportsResponse_mE94A6A5C257215A36A51C878414A0D5589B96992(L_21, NULL);
-		__this->___AirpotsResponse_9 = L_22;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___AirpotsResponse_9), (void*)L_22);
+		RestResponse_t1D39167CB052A264EC9A6241318FA1848ADACF0A* L_9 = V_1;
+		airports_tA14B57977CE40A655B12F0ACFCA13076122D21C7* L_10;
+		L_10 = GetApiData_AirportsResponse_m14836DE3BBC5EB250F52AF96A4704A8DD9614B09(__this, L_9, NULL);
+		__this->___AirpotsResponse_10 = L_10;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___AirpotsResponse_10), (void*)L_10);
 		// return null;
 		return (flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF*)NULL;
 	}
 
-IL_00a6:
+IL_004e:
 	{
 		// FlightResponse = FlightsResponse(response);
-		RestResponse_t1D39167CB052A264EC9A6241318FA1848ADACF0A* L_23 = V_1;
-		flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* L_24;
-		L_24 = GetApiData_FlightsResponse_m8E725E868B0A7FE83C8D4BA13116383F6B9832B4(L_23, NULL);
-		__this->___FlightResponse_10 = L_24;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___FlightResponse_10), (void*)L_24);
+		RestResponse_t1D39167CB052A264EC9A6241318FA1848ADACF0A* L_11 = V_1;
+		flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* L_12;
+		L_12 = GetApiData_FlightsResponse_mFB2824A664B0CEE76FBAD38B99F3B59BE03E5159(__this, L_11, NULL);
+		__this->___FlightResponse_11 = L_12;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___FlightResponse_11), (void*)L_12);
 		// Debug.Log(message: $"number of flights = {FlightResponse.response.Count}");
-		flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* L_25 = __this->___FlightResponse_10;
-		NullCheck(L_25);
-		List_1_t104BBB2C4B72609D6FA98412089B1E23487177B9* L_26 = L_25->___response_0;
-		NullCheck(L_26);
-		int32_t L_27;
-		L_27 = List_1_get_Count_mA20F5C4ABD8A3ADDAA7B3D1EF1A20A1A31273687_inline(L_26, List_1_get_Count_mA20F5C4ABD8A3ADDAA7B3D1EF1A20A1A31273687_RuntimeMethod_var);
-		int32_t L_28 = L_27;
-		RuntimeObject* L_29 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_28);
-		String_t* L_30;
-		L_30 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral67ACE8DA0508E7407C37B4711C254D0B70D5E619, L_29, NULL);
+		flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* L_13 = __this->___FlightResponse_11;
+		NullCheck(L_13);
+		List_1_t104BBB2C4B72609D6FA98412089B1E23487177B9* L_14 = L_13->___response_0;
+		NullCheck(L_14);
+		int32_t L_15;
+		L_15 = List_1_get_Count_mA20F5C4ABD8A3ADDAA7B3D1EF1A20A1A31273687_inline(L_14, List_1_get_Count_mA20F5C4ABD8A3ADDAA7B3D1EF1A20A1A31273687_RuntimeMethod_var);
+		int32_t L_16 = L_15;
+		RuntimeObject* L_17 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_16);
+		String_t* L_18;
+		L_18 = String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8(_stringLiteral67ACE8DA0508E7407C37B4711C254D0B70D5E619, L_17, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_30, NULL);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_18, NULL);
 		// return FlightResponse;
-		flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* L_31 = __this->___FlightResponse_10;
-		return L_31;
+		flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* L_19 = __this->___FlightResponse_11;
+		return L_19;
 	}
 }
 // airports GetApiData::AirportsResponse(RestSharp.RestResponse)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR airports_tA14B57977CE40A655B12F0ACFCA13076122D21C7* GetApiData_AirportsResponse_mE94A6A5C257215A36A51C878414A0D5589B96992 (RestResponse_t1D39167CB052A264EC9A6241318FA1848ADACF0A* ___response0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR airports_tA14B57977CE40A655B12F0ACFCA13076122D21C7* GetApiData_AirportsResponse_m14836DE3BBC5EB250F52AF96A4704A8DD9614B09 (GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F* __this, RestResponse_t1D39167CB052A264EC9A6241318FA1848ADACF0A* ___response0, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -24995,15 +24967,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR airports_tA14B57977CE40A655B12F0ACFCA13076122
 	}
 }
 // flights GetApiData::FlightsResponse(RestSharp.RestResponse)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* GetApiData_FlightsResponse_m8E725E868B0A7FE83C8D4BA13116383F6B9832B4 (RestResponse_t1D39167CB052A264EC9A6241318FA1848ADACF0A* ___response0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* GetApiData_FlightsResponse_mFB2824A664B0CEE76FBAD38B99F3B59BE03E5159 (GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F* __this, RestResponse_t1D39167CB052A264EC9A6241318FA1848ADACF0A* ___response0, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JsonConvert_DeserializeObject_Tisflights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF_m14E8634DA029A044C2D317A7F8985BBE9F1C7DF9_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JsonConvert_t01281FFED14CC2AEFABB6608315D90ED5C46E0C2_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral80DFB27CCC6CCF3576955208EDB98ABF86D1E5D8);
 		s_Il2CppMethodInitialized = true;
 	}
+	flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* V_0 = NULL;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* V_1 = NULL;
 	{
 		// flights flightResponse = JsonConvert.DeserializeObject<flights>(response.Content);
 		RestResponse_t1D39167CB052A264EC9A6241318FA1848ADACF0A* L_0 = ___response0;
@@ -25013,8 +24988,166 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9C
 		il2cpp_codegen_runtime_class_init_inline(JsonConvert_t01281FFED14CC2AEFABB6608315D90ED5C46E0C2_il2cpp_TypeInfo_var);
 		flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* L_2;
 		L_2 = JsonConvert_DeserializeObject_Tisflights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF_m14E8634DA029A044C2D317A7F8985BBE9F1C7DF9(L_1, JsonConvert_DeserializeObject_Tisflights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF_m14E8634DA029A044C2D317A7F8985BBE9F1C7DF9_RuntimeMethod_var);
+		V_0 = L_2;
+		// GameObject plane = GameObject.FindGameObjectWithTag("Plane");
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = GameObject_FindGameObjectWithTag_mF0229BC2074CE9EEA72FAB1E5A4BC2AEC3D2CDBE(_stringLiteral80DFB27CCC6CCF3576955208EDB98ABF86D1E5D8, NULL);
+		V_1 = L_3;
+		// PlaneLocation(flightResponse, plane);
+		flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* L_4 = V_0;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = V_1;
+		GetApiData_PlaneLocation_m958CDC679C9F161FBD94A962A7F4E6811282D09A(__this, L_4, L_5, NULL);
 		// return flightResponse;
-		return L_2;
+		flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Void GetApiData::PlaneLocation(flights,UnityEngine.GameObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetApiData_PlaneLocation_m958CDC679C9F161FBD94A962A7F4E6811282D09A (GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F* __this, flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* ___flightResponse0, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___plane1, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mA20F5C4ABD8A3ADDAA7B3D1EF1A20A1A31273687_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mE9F3E658D94C48F9878EB23AE3817A3560E57CA6_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1A5FDF64BA0D133A538BB7190E80688B488F9FB8);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	float V_1 = 0.0f;
+	float V_2 = 0.0f;
+	float V_3 = 0.0f;
+	{
+		// for (int i = 0; i < flightResponse.response.Count; i++)
+		V_0 = 0;
+		goto IL_010f;
+	}
+
+IL_0007:
+	{
+		// Instantiate(plane, Vector3.zero, Quaternion.identity);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = ___plane1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
+		L_1 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_2;
+		L_2 = Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline(NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_0, L_1, L_2, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
+		// plane.transform.parent = GlobalSystem.transform;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = ___plane1;
+		NullCheck(L_4);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
+		L_5 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_4, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___GlobalSystem_12;
+		NullCheck(L_6);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_6, NULL);
+		NullCheck(L_5);
+		Transform_set_parent_m9BD5E563B539DD5BEC342736B03F97B38A243234(L_5, L_7, NULL);
+		// latitude = Mathf.PI * flightResponse.response[i].lat / 180;
+		flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* L_8 = ___flightResponse0;
+		NullCheck(L_8);
+		List_1_t104BBB2C4B72609D6FA98412089B1E23487177B9* L_9 = L_8->___response_0;
+		int32_t L_10 = V_0;
+		NullCheck(L_9);
+		FlightsEmbeddedField_t9EABA8F5002B4490539D9EEF57387A25CCF64D27* L_11;
+		L_11 = List_1_get_Item_mE9F3E658D94C48F9878EB23AE3817A3560E57CA6(L_9, L_10, List_1_get_Item_mE9F3E658D94C48F9878EB23AE3817A3560E57CA6_RuntimeMethod_var);
+		NullCheck(L_11);
+		float L_12 = L_11->___lat_1;
+		__this->___latitude_14 = ((float)(((float)il2cpp_codegen_multiply((3.14159274f), L_12))/(180.0f)));
+		// longitude = Mathf.PI * flightResponse.response[i].lng / 180;
+		flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* L_13 = ___flightResponse0;
+		NullCheck(L_13);
+		List_1_t104BBB2C4B72609D6FA98412089B1E23487177B9* L_14 = L_13->___response_0;
+		int32_t L_15 = V_0;
+		NullCheck(L_14);
+		FlightsEmbeddedField_t9EABA8F5002B4490539D9EEF57387A25CCF64D27* L_16;
+		L_16 = List_1_get_Item_mE9F3E658D94C48F9878EB23AE3817A3560E57CA6(L_14, L_15, List_1_get_Item_mE9F3E658D94C48F9878EB23AE3817A3560E57CA6_RuntimeMethod_var);
+		NullCheck(L_16);
+		float L_17 = L_16->___lng_2;
+		__this->___longitude_15 = ((float)(((float)il2cpp_codegen_multiply((3.14159274f), L_17))/(180.0f)));
+		// latitude -= 1.570795765134f; // subtract 90 degrees (in radians)
+		float L_18 = __this->___latitude_14;
+		__this->___latitude_14 = ((float)il2cpp_codegen_subtract(L_18, (1.57079577f)));
+		// float xPos = (radius) * Mathf.Sin(latitude) * Mathf.Cos(longitude);
+		float L_19 = __this->___radius_8;
+		float L_20 = __this->___latitude_14;
+		float L_21;
+		L_21 = sinf(L_20);
+		float L_22 = __this->___longitude_15;
+		float L_23;
+		L_23 = cosf(L_22);
+		V_1 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_19, L_21)), L_23));
+		// float zPos = (radius) * Mathf.Sin(latitude) * Mathf.Sin(longitude);
+		float L_24 = __this->___radius_8;
+		float L_25 = __this->___latitude_14;
+		float L_26;
+		L_26 = sinf(L_25);
+		float L_27 = __this->___longitude_15;
+		float L_28;
+		L_28 = sinf(L_27);
+		V_2 = ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_24, L_26)), L_28));
+		// float yPos = (radius) * Mathf.Cos(latitude);
+		float L_29 = __this->___radius_8;
+		float L_30 = __this->___latitude_14;
+		float L_31;
+		L_31 = cosf(L_30);
+		V_3 = ((float)il2cpp_codegen_multiply(L_29, L_31));
+		// plane.transform.position = new Vector3(xPos, yPos, zPos);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32 = ___plane1;
+		NullCheck(L_32);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_33;
+		L_33 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_32, NULL);
+		float L_34 = V_1;
+		float L_35 = V_3;
+		float L_36 = V_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_37;
+		memset((&L_37), 0, sizeof(L_37));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_37), L_34, L_35, L_36, /*hidden argument*/NULL);
+		NullCheck(L_33);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_33, L_37, NULL);
+		// Debug.Log(message: $" Plane Location { xPos}, { yPos}, {zPos}");
+		float L_38 = V_1;
+		float L_39 = L_38;
+		RuntimeObject* L_40 = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &L_39);
+		float L_41 = V_3;
+		float L_42 = L_41;
+		RuntimeObject* L_43 = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &L_42);
+		float L_44 = V_2;
+		float L_45 = L_44;
+		RuntimeObject* L_46 = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &L_45);
+		String_t* L_47;
+		L_47 = String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C(_stringLiteral1A5FDF64BA0D133A538BB7190E80688B488F9FB8, L_40, L_43, L_46, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_47, NULL);
+		// for (int i = 0; i < flightResponse.response.Count; i++)
+		int32_t L_48 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_48, 1));
+	}
+
+IL_010f:
+	{
+		// for (int i = 0; i < flightResponse.response.Count; i++)
+		int32_t L_49 = V_0;
+		flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* L_50 = ___flightResponse0;
+		NullCheck(L_50);
+		List_1_t104BBB2C4B72609D6FA98412089B1E23487177B9* L_51 = L_50->___response_0;
+		NullCheck(L_51);
+		int32_t L_52;
+		L_52 = List_1_get_Count_mA20F5C4ABD8A3ADDAA7B3D1EF1A20A1A31273687_inline(L_51, List_1_get_Count_mA20F5C4ABD8A3ADDAA7B3D1EF1A20A1A31273687_RuntimeMethod_var);
+		if ((((int32_t)L_49) < ((int32_t)L_52)))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		// }
+		return;
 	}
 }
 // System.Void GetApiData::.ctor()
@@ -25042,6 +25175,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetApiData__ctor_m2BA68DA11804FB09558172
 		// [SerializeField] public string endpoint_flights = "flights?flag=US,flight_iata=UA";
 		__this->___endpoint_flights_7 = _stringLiteralEBA809BE5642E09E24FEE1E3931D28E772C7F674;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___endpoint_flights_7), (void*)_stringLiteralEBA809BE5642E09E24FEE1E3931D28E772C7F674);
+		// [SerializeField] public float radius = 5; // globe ball radius (unity units)
+		__this->___radius_8 = (5.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
