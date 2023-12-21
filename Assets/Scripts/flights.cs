@@ -3,6 +3,7 @@ using System.Collections.Generic;
 [System.Serializable]
 public class FlightsEmbeddedField
 {
+    //public string airline_name;
     public string reg_number;
     public float lat;
     public float lng;

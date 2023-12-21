@@ -6,9 +6,10 @@ public class PlaneLocation : MonoBehaviour
 {
     // Start is called before the first frame update
     public Transform marker;
+    public GameObject parent;
     public float radius = 5; // globe ball radius (unity units)
-    public float latitude = 38.5072f; // lat
-    public float longitude = 77.1275f; // long
+    public float latitude = 0f; // lat
+    public float longitude = 0f; // long
 
     void Start()
     {
@@ -21,16 +22,21 @@ public class PlaneLocation : MonoBehaviour
         longitude = Mathf.PI * longitude / 180;
 
         // adjust position by radians	
-        latitude -= 1.570795765134f; // subtract 90 degrees (in radians)
+        //latitude -= 1.570795765134f; // subtract 90 degrees (in radians)
 
         // and switch z and y (since z is forward)
-        float xPos = (radius) * Mathf.Sin(latitude) * Mathf.Cos(longitude);
-        float zPos = (radius) * Mathf.Sin(latitude) * Mathf.Sin(longitude);
-        float yPos = (radius) * Mathf.Cos(latitude);
+        //float xPos = (radius) * Mathf.Sin(latitude) * Mathf.Cos(longitude);
+        //float zPos = (radius) * Mathf.Sin(latitude) * Mathf.Sin(longitude);
+        //float yPos = (radius) * Mathf.Cos(latitude);
 
+        float xPos = (radius) * Mathf.Cos(latitude) * Mathf.Cos(longitude);
+        float zPos = (radius) * Mathf.Cos(latitude) * Mathf.Sin(longitude);
+        float yPos = (radius) * Mathf.Sin(latitude);
 
         // move marker to position
         marker.position = new Vector3(xPos, yPos, zPos);
+        transform.LookAt(Vector3.zero);
+        marker.transform.parent = parent.transform;
         Debug.Log(message:$" Plane Location { xPos}, { yPos}, {zPos}");
     }
 

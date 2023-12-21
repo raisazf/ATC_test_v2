@@ -30230,10 +30230,10 @@ struct FlashlightController_tD2D92F4C4986ADD3E9D1FE068AC8278FA59E283F  : public 
 // FlightStatus
 struct FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// System.String FlightStatus::airline_name
+	String_t* ___airline_name_4;
 	// System.String FlightStatus::reg_number
-	String_t* ___reg_number_4;
-	// System.String FlightStatus::airline
-	String_t* ___airline_5;
+	String_t* ___reg_number_5;
 	// System.Single FlightStatus::lat
 	float ___lat_6;
 	// System.Single FlightStatus::lng
@@ -30242,10 +30242,6 @@ struct FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34  : public MonoBeha
 	float ___alt_8;
 	// System.Single FlightStatus::dir
 	float ___dir_9;
-	// System.Single FlightStatus::speed
-	float ___speed_10;
-	// System.Single FlightStatus::duration
-	float ___duration_11;
 };
 
 // Meta.WitAi.Utilities.FloatToStringEvent
@@ -32132,12 +32128,14 @@ struct PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870  : public MonoBeh
 {
 	// UnityEngine.Transform PlaneLocation::marker
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___marker_4;
+	// UnityEngine.GameObject PlaneLocation::parent
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___parent_5;
 	// System.Single PlaneLocation::radius
-	float ___radius_5;
+	float ___radius_6;
 	// System.Single PlaneLocation::latitude
-	float ___latitude_6;
+	float ___latitude_7;
 	// System.Single PlaneLocation::longitude
-	float ___longitude_7;
+	float ___longitude_8;
 };
 
 // Oculus.Interaction.Body.Samples.PoseCaptureCountdown
@@ -39537,15 +39535,15 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9605[5] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9606[1] = 
 {
 	static_cast<int32_t>(offsetof(flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF, ___response_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9607[8] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9607[6] = 
 {
-	static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___reg_number_4)),static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___airline_5)),static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___lat_6)),static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___lng_7)),static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___alt_8)),static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___dir_9)),static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___speed_10)),static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___duration_11)),};
+	static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___airline_name_4)),static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___reg_number_5)),static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___lat_6)),static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___lng_7)),static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___alt_8)),static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___dir_9)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9608[14] = 
 {
 	static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___apiUrl_4)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___apiKey_5)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___endpoint_airport_6)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___endpoint_flights_7)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___radius_8)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___isAirport_9)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___AirpotsResponse_10)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___FlightResponse_11)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___GlobalSystem_12)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___newURL_13)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___latitude_14)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___longitude_15)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___altitude_16)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___direction_17)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9609[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9609[5] = 
 {
-	static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___marker_4)),static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___radius_5)),static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___latitude_6)),static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___longitude_7)),};
+	static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___marker_4)),static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___parent_5)),static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___radius_6)),static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___latitude_7)),static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___longitude_8)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9610[10] = 
 {
 	static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___radius_4)),static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___marker_5)),static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___marker2_6)),static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___earth_7)),static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___sphere_8)),static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___temp_lng_9)),static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___temp_lat_10)),static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___dir_11)),static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___alt_12)),static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___Alt_13)),};
