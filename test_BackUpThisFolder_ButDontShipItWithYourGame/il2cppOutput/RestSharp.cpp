@@ -222,6 +222,8 @@ struct Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71;
 struct Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA;
 // System.Collections.Generic.Dictionary`2<System.String,System.Net.Http.Headers.HeaderInfo>
 struct Dictionary_2_t5CD3F4D4D92A89783AE1C95F1528A7B08E8A54E0;
+// System.Collections.Generic.Dictionary`2<System.String,System.Object>
+struct Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710;
 // System.Collections.Generic.Dictionary`2<System.String,System.String>
 struct Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83;
 // System.Collections.Generic.Dictionary`2<System.String,System.Net.Http.Headers.HttpHeaders/HeaderBucket>
@@ -2467,14 +2469,16 @@ struct HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2  : public Ru
 	HttpMethod_t9AB9E2BAC0D02F479F4624271A4F79E70221258E* ___method_1;
 	// System.Version System.Net.Http.HttpRequestMessage::version
 	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___version_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Object> System.Net.Http.HttpRequestMessage::properties
+	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* ___properties_3;
 	// System.Uri System.Net.Http.HttpRequestMessage::uri
-	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri_3;
+	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri_4;
 	// System.Boolean System.Net.Http.HttpRequestMessage::is_used
-	bool ___is_used_4;
+	bool ___is_used_5;
 	// System.Boolean System.Net.Http.HttpRequestMessage::disposed
-	bool ___disposed_5;
+	bool ___disposed_6;
 	// System.Net.Http.HttpContent System.Net.Http.HttpRequestMessage::<Content>k__BackingField
-	HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* ___U3CContentU3Ek__BackingField_6;
+	HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* ___U3CContentU3Ek__BackingField_7;
 };
 
 // RestSharp.HttpRequestMessageExtensions
@@ -2487,18 +2491,20 @@ struct HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970  : public R
 {
 	// System.Net.Http.Headers.HttpResponseHeaders System.Net.Http.HttpResponseMessage::headers
 	HttpResponseHeaders_tAD02F8CC2960BC561FEFD63E0121701743EAA7A8* ___headers_0;
+	// System.Net.Http.Headers.HttpResponseHeaders System.Net.Http.HttpResponseMessage::trailingHeaders
+	HttpResponseHeaders_tAD02F8CC2960BC561FEFD63E0121701743EAA7A8* ___trailingHeaders_1;
 	// System.String System.Net.Http.HttpResponseMessage::reasonPhrase
-	String_t* ___reasonPhrase_1;
+	String_t* ___reasonPhrase_2;
 	// System.Net.HttpStatusCode System.Net.Http.HttpResponseMessage::statusCode
-	int32_t ___statusCode_2;
+	int32_t ___statusCode_3;
 	// System.Version System.Net.Http.HttpResponseMessage::version
-	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___version_3;
+	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___version_4;
 	// System.Boolean System.Net.Http.HttpResponseMessage::disposed
-	bool ___disposed_4;
+	bool ___disposed_5;
 	// System.Net.Http.HttpContent System.Net.Http.HttpResponseMessage::<Content>k__BackingField
-	HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* ___U3CContentU3Ek__BackingField_5;
+	HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* ___U3CContentU3Ek__BackingField_6;
 	// System.Net.Http.HttpRequestMessage System.Net.Http.HttpResponseMessage::<RequestMessage>k__BackingField
-	HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* ___U3CRequestMessageU3Ek__BackingField_6;
+	HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* ___U3CRequestMessageU3Ek__BackingField_7;
 };
 
 // RestSharp.KnownHeaders
@@ -34513,7 +34519,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Version_tE426DB5655D0F22920AE16A2
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HttpResponseMessage_get_StatusCode_m63BE26E4C79137B35F3066C6BA6A5FF5F3D16AAA_inline (HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = __this->___statusCode_2;
+		int32_t L_0 = __this->___statusCode_3;
 		return L_0;
 	}
 }
@@ -34888,7 +34894,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RestResponseBase_set_RawByte
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* HttpResponseMessage_get_Content_m2350C12EA59DAD014A59B17398E5B50F62202AF6_inline (HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970* __this, const RuntimeMethod* method) 
 {
 	{
-		HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* L_0 = __this->___U3CContentU3Ek__BackingField_5;
+		HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* L_0 = __this->___U3CContentU3Ek__BackingField_6;
 		return L_0;
 	}
 }
@@ -34904,7 +34910,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RestResponseBase_set_Content
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* HttpResponseMessage_get_RequestMessage_mBC62117923037090A054600AABF84BBAFA28533F_inline (HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970* __this, const RuntimeMethod* method) 
 {
 	{
-		HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* L_0 = __this->___U3CRequestMessageU3Ek__BackingField_6;
+		HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* L_0 = __this->___U3CRequestMessageU3Ek__BackingField_7;
 		return L_0;
 	}
 }
@@ -34959,7 +34965,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void RestResponseBase_set_ErrorEx
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* HttpRequestMessage_get_RequestUri_mB71FD84AC5D3AAD3D9E3BA0FB827691F52E235A5_inline (HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* __this, const RuntimeMethod* method) 
 {
 	{
-		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_0 = __this->___uri_3;
+		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_0 = __this->___uri_4;
 		return L_0;
 	}
 }
@@ -35488,8 +35494,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpRequestMessage_set_Conte
 {
 	{
 		HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* L_0 = ___value0;
-		__this->___U3CContentU3Ek__BackingField_6 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CContentU3Ek__BackingField_6), (void*)L_0);
+		__this->___U3CContentU3Ek__BackingField_7 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CContentU3Ek__BackingField_7), (void*)L_0);
 		return;
 	}
 }

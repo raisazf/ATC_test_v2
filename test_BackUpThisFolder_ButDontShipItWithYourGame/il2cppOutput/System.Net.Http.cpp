@@ -145,6 +145,8 @@ struct Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA;
 struct Dictionary_2_tE1603CE612C16451D1E56FF4D4859D4FE4087C28;
 // System.Collections.Generic.Dictionary`2<System.String,System.Net.Http.Headers.HeaderInfo>
 struct Dictionary_2_t5CD3F4D4D92A89783AE1C95F1528A7B08E8A54E0;
+// System.Collections.Generic.Dictionary`2<System.String,System.Object>
+struct Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710;
 // System.Collections.Generic.Dictionary`2<System.String,System.Net.Http.Headers.HttpHeaders/HeaderBucket>
 struct Dictionary_2_t1B3325E856D6A0623AE0B139B6A7E8B27C590A41;
 // System.Net.Http.Headers.ElementTryParser`1<System.Net.Http.Headers.AuthenticationHeaderValue>
@@ -2285,14 +2287,16 @@ struct HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2  : public Ru
 	HttpMethod_t9AB9E2BAC0D02F479F4624271A4F79E70221258E* ___method_1;
 	// System.Version System.Net.Http.HttpRequestMessage::version
 	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___version_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Object> System.Net.Http.HttpRequestMessage::properties
+	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* ___properties_3;
 	// System.Uri System.Net.Http.HttpRequestMessage::uri
-	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri_3;
+	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri_4;
 	// System.Boolean System.Net.Http.HttpRequestMessage::is_used
-	bool ___is_used_4;
+	bool ___is_used_5;
 	// System.Boolean System.Net.Http.HttpRequestMessage::disposed
-	bool ___disposed_5;
+	bool ___disposed_6;
 	// System.Net.Http.HttpContent System.Net.Http.HttpRequestMessage::<Content>k__BackingField
-	HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* ___U3CContentU3Ek__BackingField_6;
+	HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* ___U3CContentU3Ek__BackingField_7;
 };
 
 // System.Net.Http.HttpResponseMessage
@@ -2300,18 +2304,20 @@ struct HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970  : public R
 {
 	// System.Net.Http.Headers.HttpResponseHeaders System.Net.Http.HttpResponseMessage::headers
 	HttpResponseHeaders_tAD02F8CC2960BC561FEFD63E0121701743EAA7A8* ___headers_0;
+	// System.Net.Http.Headers.HttpResponseHeaders System.Net.Http.HttpResponseMessage::trailingHeaders
+	HttpResponseHeaders_tAD02F8CC2960BC561FEFD63E0121701743EAA7A8* ___trailingHeaders_1;
 	// System.String System.Net.Http.HttpResponseMessage::reasonPhrase
-	String_t* ___reasonPhrase_1;
+	String_t* ___reasonPhrase_2;
 	// System.Net.HttpStatusCode System.Net.Http.HttpResponseMessage::statusCode
-	int32_t ___statusCode_2;
+	int32_t ___statusCode_3;
 	// System.Version System.Net.Http.HttpResponseMessage::version
-	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___version_3;
+	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___version_4;
 	// System.Boolean System.Net.Http.HttpResponseMessage::disposed
-	bool ___disposed_4;
+	bool ___disposed_5;
 	// System.Net.Http.HttpContent System.Net.Http.HttpResponseMessage::<Content>k__BackingField
-	HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* ___U3CContentU3Ek__BackingField_5;
+	HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* ___U3CContentU3Ek__BackingField_6;
 	// System.Net.Http.HttpRequestMessage System.Net.Http.HttpResponseMessage::<RequestMessage>k__BackingField
-	HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* ___U3CRequestMessageU3Ek__BackingField_6;
+	HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* ___U3CRequestMessageU3Ek__BackingField_7;
 };
 
 // System.Net.HttpVersion
@@ -13107,7 +13113,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpRequestMessage__ctor_mF4583BF147D86D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* HttpRequestMessage_get_Content_m263E0A8B60C6D617144203073CA853A473FA860E (HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* __this, const RuntimeMethod* method) 
 {
 	{
-		HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* L_0 = __this->___U3CContentU3Ek__BackingField_6;
+		HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* L_0 = __this->___U3CContentU3Ek__BackingField_7;
 		return L_0;
 	}
 }
@@ -13116,8 +13122,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpRequestMessage_set_Content_m522F62E9
 {
 	{
 		HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* L_0 = ___value0;
-		__this->___U3CContentU3Ek__BackingField_6 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CContentU3Ek__BackingField_6), (void*)L_0);
+		__this->___U3CContentU3Ek__BackingField_7 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CContentU3Ek__BackingField_7), (void*)L_0);
 		return;
 	}
 }
@@ -13206,7 +13212,7 @@ IL_0014:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* HttpRequestMessage_get_RequestUri_mB71FD84AC5D3AAD3D9E3BA0FB827691F52E235A5 (HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* __this, const RuntimeMethod* method) 
 {
 	{
-		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_0 = __this->___uri_3;
+		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_0 = __this->___uri_4;
 		return L_0;
 	}
 }
@@ -13258,8 +13264,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpRequestMessage_set_RequestUri_m8F8BF
 IL_0024:
 	{
 		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_7 = ___value0;
-		__this->___uri_3 = L_7;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___uri_3), (void*)L_7);
+		__this->___uri_4 = L_7;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___uri_4), (void*)L_7);
 		return;
 	}
 }
@@ -13395,14 +13401,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpRequestMessage_Dispose_mF8B780AD56D8
 		}
 	}
 	{
-		bool L_1 = __this->___disposed_5;
+		bool L_1 = __this->___disposed_6;
 		if (L_1)
 		{
 			goto IL_0025;
 		}
 	}
 	{
-		__this->___disposed_5 = (bool)1;
+		__this->___disposed_6 = (bool)1;
 		HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* L_2;
 		L_2 = HttpRequestMessage_get_Content_m263E0A8B60C6D617144203073CA853A473FA860E_inline(__this, NULL);
 		if (!L_2)
@@ -13426,7 +13432,7 @@ IL_0025:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpRequestMessage_SetIsUsed_m35E7B7BFB9E77DD07D79A35DAF4223219BBFEA5A (HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* __this, const RuntimeMethod* method) 
 {
 	{
-		bool L_0 = __this->___is_used_4;
+		bool L_0 = __this->___is_used_5;
 		if (!L_0)
 		{
 			goto IL_000a;
@@ -13438,7 +13444,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpRequestMessage_SetIsUsed_m35E7B7BFB9
 
 IL_000a:
 	{
-		__this->___is_used_4 = (bool)1;
+		__this->___is_used_5 = (bool)1;
 		return (bool)0;
 	}
 }
@@ -13626,7 +13632,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpResponseMessage__ctor_m9DC9D8E234326
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* HttpResponseMessage_get_Content_m2350C12EA59DAD014A59B17398E5B50F62202AF6 (HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970* __this, const RuntimeMethod* method) 
 {
 	{
-		HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* L_0 = __this->___U3CContentU3Ek__BackingField_5;
+		HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* L_0 = __this->___U3CContentU3Ek__BackingField_6;
 		return L_0;
 	}
 }
@@ -13635,8 +13641,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpResponseMessage_set_Content_m8ABAA76
 {
 	{
 		HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* L_0 = ___value0;
-		__this->___U3CContentU3Ek__BackingField_5 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CContentU3Ek__BackingField_5), (void*)L_0);
+		__this->___U3CContentU3Ek__BackingField_6 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CContentU3Ek__BackingField_6), (void*)L_0);
 		return;
 	}
 }
@@ -13683,14 +13689,14 @@ IL_0018:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpResponseMessage_get_IsSuccessStatusCode_m2B9DA5ECF8EE760D5A1A511C798FA08EAA931B9C (HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = __this->___statusCode_2;
+		int32_t L_0 = __this->___statusCode_3;
 		if ((((int32_t)L_0) < ((int32_t)((int32_t)200))))
 		{
 			goto IL_001b;
 		}
 	}
 	{
-		int32_t L_1 = __this->___statusCode_2;
+		int32_t L_1 = __this->___statusCode_3;
 		return (bool)((((int32_t)L_1) < ((int32_t)((int32_t)300)))? 1 : 0);
 	}
 
@@ -13705,7 +13711,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpResponseMessage_get_ReasonPhras
 	String_t* G_B2_0 = NULL;
 	String_t* G_B1_0 = NULL;
 	{
-		String_t* L_0 = __this->___reasonPhrase_1;
+		String_t* L_0 = __this->___reasonPhrase_2;
 		String_t* L_1 = L_0;
 		G_B1_0 = L_1;
 		if (L_1)
@@ -13715,7 +13721,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpResponseMessage_get_ReasonPhras
 		}
 	}
 	{
-		int32_t L_2 = __this->___statusCode_2;
+		int32_t L_2 = __this->___statusCode_3;
 		String_t* L_3;
 		L_3 = HttpStatusDescription_Get_m45442E0E8AD606986CA6CACA1A4CEDA727C1A0DB(L_2, NULL);
 		G_B2_0 = L_3;
@@ -13731,8 +13737,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpResponseMessage_set_ReasonPhrase_m15
 {
 	{
 		String_t* L_0 = ___value0;
-		__this->___reasonPhrase_1 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___reasonPhrase_1), (void*)L_0);
+		__this->___reasonPhrase_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___reasonPhrase_2), (void*)L_0);
 		return;
 	}
 }
@@ -13740,7 +13746,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpResponseMessage_set_ReasonPhrase_m15
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* HttpResponseMessage_get_RequestMessage_mBC62117923037090A054600AABF84BBAFA28533F (HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970* __this, const RuntimeMethod* method) 
 {
 	{
-		HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* L_0 = __this->___U3CRequestMessageU3Ek__BackingField_6;
+		HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* L_0 = __this->___U3CRequestMessageU3Ek__BackingField_7;
 		return L_0;
 	}
 }
@@ -13749,8 +13755,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpResponseMessage_set_RequestMessage_m
 {
 	{
 		HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* L_0 = ___value0;
-		__this->___U3CRequestMessageU3Ek__BackingField_6 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CRequestMessageU3Ek__BackingField_6), (void*)L_0);
+		__this->___U3CRequestMessageU3Ek__BackingField_7 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CRequestMessageU3Ek__BackingField_7), (void*)L_0);
 		return;
 	}
 }
@@ -13758,7 +13764,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpResponseMessage_set_RequestMessage_m
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpResponseMessage_get_StatusCode_m63BE26E4C79137B35F3066C6BA6A5FF5F3D16AAA (HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = __this->___statusCode_2;
+		int32_t L_0 = __this->___statusCode_3;
 		return L_0;
 	}
 }
@@ -13782,7 +13788,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpResponseMessage_set_StatusCode_m8433
 IL_000a:
 	{
 		int32_t L_2 = ___value0;
-		__this->___statusCode_2 = L_2;
+		__this->___statusCode_3 = L_2;
 		return;
 	}
 }
@@ -13798,7 +13804,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Version_tE426DB5655D0F22920AE16A2AA9AB7781B82
 	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* G_B2_0 = NULL;
 	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* G_B1_0 = NULL;
 	{
-		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* L_0 = __this->___version_3;
+		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* L_0 = __this->___version_4;
 		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* L_1 = L_0;
 		G_B1_0 = L_1;
 		if (L_1)
@@ -13837,14 +13843,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpResponseMessage_Dispose_mD405404BEA4
 		}
 	}
 	{
-		bool L_1 = __this->___disposed_4;
+		bool L_1 = __this->___disposed_5;
 		if (L_1)
 		{
 			goto IL_0025;
 		}
 	}
 	{
-		__this->___disposed_4 = (bool)1;
+		__this->___disposed_5 = (bool)1;
 		HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* L_2;
 		L_2 = HttpResponseMessage_get_Content_m2350C12EA59DAD014A59B17398E5B50F62202AF6_inline(__this, NULL);
 		if (!L_2)
@@ -31153,7 +31159,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool MonoWebRequestHandler_get_Us
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* HttpRequestMessage_get_RequestUri_mB71FD84AC5D3AAD3D9E3BA0FB827691F52E235A5_inline (HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* __this, const RuntimeMethod* method) 
 {
 	{
-		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_0 = __this->___uri_3;
+		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_0 = __this->___uri_4;
 		return L_0;
 	}
 }
@@ -31198,8 +31204,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpResponseMessage_set_Requ
 {
 	{
 		HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* L_0 = ___value0;
-		__this->___U3CRequestMessageU3Ek__BackingField_6 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CRequestMessageU3Ek__BackingField_6), (void*)L_0);
+		__this->___U3CRequestMessageU3Ek__BackingField_7 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CRequestMessageU3Ek__BackingField_7), (void*)L_0);
 		return;
 	}
 }
@@ -31207,8 +31213,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpResponseMessage_set_Reas
 {
 	{
 		String_t* L_0 = ___value0;
-		__this->___reasonPhrase_1 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___reasonPhrase_1), (void*)L_0);
+		__this->___reasonPhrase_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___reasonPhrase_2), (void*)L_0);
 		return;
 	}
 }
@@ -31216,22 +31222,22 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpResponseMessage_set_Cont
 {
 	{
 		HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* L_0 = ___value0;
-		__this->___U3CContentU3Ek__BackingField_5 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CContentU3Ek__BackingField_5), (void*)L_0);
+		__this->___U3CContentU3Ek__BackingField_6 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CContentU3Ek__BackingField_6), (void*)L_0);
 		return;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* HttpResponseMessage_get_Content_m2350C12EA59DAD014A59B17398E5B50F62202AF6_inline (HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970* __this, const RuntimeMethod* method) 
 {
 	{
-		HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* L_0 = __this->___U3CContentU3Ek__BackingField_5;
+		HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* L_0 = __this->___U3CContentU3Ek__BackingField_6;
 		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* HttpRequestMessage_get_Content_m263E0A8B60C6D617144203073CA853A473FA860E_inline (HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* __this, const RuntimeMethod* method) 
 {
 	{
-		HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* L_0 = __this->___U3CContentU3Ek__BackingField_6;
+		HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* L_0 = __this->___U3CContentU3Ek__BackingField_7;
 		return L_0;
 	}
 }
@@ -31266,7 +31272,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int64_t HttpClient_get_MaxRespons
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HttpResponseMessage_get_StatusCode_m63BE26E4C79137B35F3066C6BA6A5FF5F3D16AAA_inline (HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = __this->___statusCode_2;
+		int32_t L_0 = __this->___statusCode_3;
 		return L_0;
 	}
 }

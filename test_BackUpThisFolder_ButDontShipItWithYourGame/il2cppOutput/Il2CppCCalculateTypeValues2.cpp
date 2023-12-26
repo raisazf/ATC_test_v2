@@ -2525,14 +2525,16 @@ struct HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2  : public Ru
 	HttpMethod_t9AB9E2BAC0D02F479F4624271A4F79E70221258E* ___method_1;
 	// System.Version System.Net.Http.HttpRequestMessage::version
 	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___version_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Object> System.Net.Http.HttpRequestMessage::properties
+	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* ___properties_3;
 	// System.Uri System.Net.Http.HttpRequestMessage::uri
-	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri_3;
+	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri_4;
 	// System.Boolean System.Net.Http.HttpRequestMessage::is_used
-	bool ___is_used_4;
+	bool ___is_used_5;
 	// System.Boolean System.Net.Http.HttpRequestMessage::disposed
-	bool ___disposed_5;
+	bool ___disposed_6;
 	// System.Net.Http.HttpContent System.Net.Http.HttpRequestMessage::<Content>k__BackingField
-	HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* ___U3CContentU3Ek__BackingField_6;
+	HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* ___U3CContentU3Ek__BackingField_7;
 };
 
 // System.Net.Http.HttpResponseMessage
@@ -2540,18 +2542,20 @@ struct HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970  : public R
 {
 	// System.Net.Http.Headers.HttpResponseHeaders System.Net.Http.HttpResponseMessage::headers
 	HttpResponseHeaders_tAD02F8CC2960BC561FEFD63E0121701743EAA7A8* ___headers_0;
+	// System.Net.Http.Headers.HttpResponseHeaders System.Net.Http.HttpResponseMessage::trailingHeaders
+	HttpResponseHeaders_tAD02F8CC2960BC561FEFD63E0121701743EAA7A8* ___trailingHeaders_1;
 	// System.String System.Net.Http.HttpResponseMessage::reasonPhrase
-	String_t* ___reasonPhrase_1;
+	String_t* ___reasonPhrase_2;
 	// System.Net.HttpStatusCode System.Net.Http.HttpResponseMessage::statusCode
-	int32_t ___statusCode_2;
+	int32_t ___statusCode_3;
 	// System.Version System.Net.Http.HttpResponseMessage::version
-	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___version_3;
+	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___version_4;
 	// System.Boolean System.Net.Http.HttpResponseMessage::disposed
-	bool ___disposed_4;
+	bool ___disposed_5;
 	// System.Net.Http.HttpContent System.Net.Http.HttpResponseMessage::<Content>k__BackingField
-	HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* ___U3CContentU3Ek__BackingField_5;
+	HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* ___U3CContentU3Ek__BackingField_6;
 	// System.Net.Http.HttpRequestMessage System.Net.Http.HttpResponseMessage::<RequestMessage>k__BackingField
-	HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* ___U3CRequestMessageU3Ek__BackingField_6;
+	HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* ___U3CRequestMessageU3Ek__BackingField_7;
 };
 
 // UnityEngine.HumanTrait

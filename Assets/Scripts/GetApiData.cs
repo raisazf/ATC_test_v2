@@ -13,56 +13,45 @@ public class GetApiData : MonoBehaviour
     [SerializeField] public string endpoint_airport = "airports?iata_code=IAD"; //airport
     [SerializeField] public string endpoint_flights = "flights?flag=US,flight_iata=UA";
     [SerializeField] public GameObject GlobalSystem;
+    [SerializeField] public GameObject marker;
     [SerializeField] public float radius = 1.008f; // globe ball radius (unity units)
     [SerializeField] public bool isAirport = false;
     [SerializeField] public airports AirpotsResponse;
     [SerializeField] public flights FlightResponse;
-    
+
 
     //public float latitude = 38.5072f; // lat
     //public float longitude = 77.1275f; // long
 
-    private string newURL;
+    //private GameObject marker;
+    private GameObject[] planes;
     private float latitude;
     private float longitude;
     private float altitude;
     private float direction;
+    private RestResponse response;
+    private flights flightResponse;
 
     public void Start()
     {
-        //StartCoroutine(GetDataFromAirLabApi());
+
         AirpotsResponse = new airports();
         FlightResponse = new flights();
-        //plane = Resources.Load("Assets/Resources/PlaneHolder") as GameObject;
-        Debug.Log(message: $"READY TO FLY");
 
         GetDataFromAirLabApi();
     }
 
-    public flights GetDataFromAirLabApi()
+    public void GetDataFromAirLabApi()
     {
-
-        //if (isAirport)
-        //{
-        //    //newURL = string.Concat(apiUrl, endpoint_airport, apiKey);
-        //}
-        //else
-        //{
-        //newURL = string.Concat(apiUrl, endpoint_flights, apiKey);
-        //}
 
         //var client = new RestClient("https://airlabs.co/api/v9/flight?flight_iata=UA2029&api_key=a206d42c-783a-494c-a21b-86bfaccdd9fd");
         //var client = new RestClient("https://airlabs.co/api/v9/flights?view=array&_fields=hex,flag,lat,lng,dir,alt&api_key=a206d42c-783a-494c-a21b-86bfaccdd9fd");
         //var client = new RestClient("https://airlabs.co/api/v9/flights?fields=flag,lat,lng,dir,alt&api_key=a206d42c-783a-494c-a21b-86bfaccdd9fd&bbox=30,-90,37,-70");
-        var client = new RestClient("https://airlabs.co/api/v9/flights?airline_iata=UA&fields=reg_number,lat,lng,dir,alt&bbox=35,-90,41,-70&api_key=a206d42c-783a-494c-a21b-86bfaccdd9fd");
-
-        //Debug.Log($"{newURL}");
-        //var client = new RestClient(newURL);
+        var client = new RestClient("https://airlabs.co/api/v9/flights?airline_iata=UA&fields=reg_number,lat,lng,dir,alt&bbox=36,-80,40,-70&api_key=a206d42c-783a-494c-a21b-86bfaccdd9fd");
 
         var request = new RestRequest();
 
-
-        RestResponse response = client.Execute(request);
+        response = client.Execute(request);
 
         //if (isAirport)
         //{
@@ -71,92 +60,68 @@ public class GetApiData : MonoBehaviour
         //}
         //else
         {
-            FlightResponse = FlightsResponse(response);
-
-            return FlightResponse;
+            PlaneLocation();
         }
 
 
     }
 
-    public airports AirportsResponse(RestResponse response)
+    public void AirportsResponse(RestResponse response)
     {
 
         airports AirpotsResponse = JsonConvert.DeserializeObject<airports>(response.Content);
         Debug.Log($"{AirpotsResponse.response.lat}");
         Debug.Log($"{AirpotsResponse.response.lng}");
         Debug.Log($"{AirpotsResponse.response.alt}");
-
-        return AirpotsResponse;
     }
 
-    public flights FlightsResponse(RestResponse response)
+    public flights PlaneLocation()
     {
+        flightResponse = JsonConvert.DeserializeObject<flights>(response.Content);
 
-        Debug.Log("response.content = " + response.Content.ToString());
-
-        flights flightResponse = JsonConvert.DeserializeObject<flights>(response.Content);
-
-        //var something = new GetApiData();
-        GameObject plane = GameObject.FindGameObjectWithTag("Plane");
-        PlaneLocation(flightResponse, plane);
-        //Debug.Log(message: $"Flight1: {flightResponse.response[0].reg_number}");
-        //Debug.Log($"Flight1: {flightResponse.response[0].lat}");
-        //Debug.Log($"Flight1: {flightResponse.response[0].lng}");
-        //Debug.Log($"Flight1: {flightResponse.response[0].alt}");
-        //Debug.Log("");
-
-        //Debug.Log($"Flight2: {flightResponse.response[1].flag}");
-        //Debug.Log($"Flight2: {flightResponse.response[1].lat}");
-        //Debug.Log($"Flight2: {flightResponse.response[1].lng}");
-        //Debug.Log($"Flight2: {flightResponse.response[1].alt}");
-
-
-        return flightResponse;
-    }
-
-    public void PlaneLocation(flights flightResponse, GameObject plane)
-    {
+        planes = new GameObject[flightResponse.response.Count];
 
         Debug.Log("Number of flights = " + flightResponse.response.Count.ToString());
-        // calculation code taken from 
-        // @miquael http://www.actionscript.org/forums/showthread.php3?p=722957#post722957
-        // convert lat/long to radians
-        // earth radius in feet 2.093e+7
 
 
         for (int i = 0; i < flightResponse.response.Count; i++)
         {
-            //Instantiate("PlaneHolder", new Vector3(0, 0, 0), Quaternion.identity);
-            //GameObject pplane = Instantiate(Resources.Load("Assets/Resources/PlaneHolder", typeof(GameObject))) as GameObject;
-            //plane = Resources.Load<GameObject>("Assets/Resources/PlaneHolder");
-            //plane = Resources.Load<GameObject>("Assets/Resources/PlaneHolder");
-            //Debug.Log(message: $"Debugging");
-            //Instantiate(plane, Vector3.zero, Quaternion.identity, GlobalSystem.transform);
-            Instantiate(plane, Vector3.zero, Quaternion.identity);
-            //plane.transform.parent = GlobalSystem.transform;
 
-            //GameObject instance = Instantiate(Resources.Load("Assets/Resources/PlaneHolder", typeof(GameObject))) as GameObject;
+            altitude = flightResponse.response[i].alt * 5; ;
+            direction = flightResponse.response[i].dir;
+
             Debug.Log(message: $" Plane {flightResponse.response[i].reg_number}  Location { flightResponse.response[i].lat}, { flightResponse.response[i].lng}, {flightResponse.response[i].alt}");
             latitude = Mathf.PI * flightResponse.response[i].lat / 180;
             longitude = Mathf.PI * flightResponse.response[i].lng / 180;
-
-            // adjust position by radians	
+            
+            // adjust position by radians	???
             //latitude -= 1.570795765134f; // subtract 90 degrees (in radians)
 
             // and switch z and y (since z is forward)
-            float xPos = (radius) * Mathf.Cos(latitude) * Mathf.Cos(longitude);
-            float zPos = (radius) * Mathf.Cos(latitude) * Mathf.Sin(longitude);
-            float yPos = (radius) * Mathf.Sin(latitude);
+            float newRadius = (float)((float)(2.093e7 + altitude) * radius / 2.093e7);
+            float xPos = (newRadius) * Mathf.Cos(latitude) * Mathf.Cos(longitude);
+            float zPos = (newRadius) * Mathf.Cos(latitude) * Mathf.Sin(longitude);
+            float yPos = (newRadius) * Mathf.Sin(latitude);
 
             // move marker to position
-            plane.transform.position = new Vector3(xPos, yPos, zPos);
-            //plane.transform.position = plane.transform.InverseTransformVector(xPos, yPos, zPos);
-            plane.transform.localScale = Vector3.Scale(new Vector3(GlobalSystem.transform.localScale.x, GlobalSystem.transform.localScale.y, GlobalSystem.transform.localScale.z), new Vector3(plane.transform.localScale.x, plane.transform.localScale.y, plane.transform.localScale.z));
-            //plane.transform.parent = GlobalSystem.transform;
-            transform.LookAt(Vector3.zero);
-            Debug.Log(message: $" Plane {flightResponse.response[i].reg_number}  3D coordinates { plane.transform.position.x}, { plane.transform.position.y}, {plane.transform.position.z} and scales {GlobalSystem.transform.localScale}, {plane.transform.localScale}");
+            //marker = GameObject.FindGameObjectWithTag("Plane");
+
+            planes[i] = Instantiate(marker, new Vector3(xPos, yPos, zPos), Quaternion.identity, GlobalSystem.transform);
+            planes[i].tag = "Untagged";
+            planes[i].transform.LookAt(Vector3.zero);
+            if (altitude < 1000f)
+            {
+                planes[i].transform.Rotate(0f, 0f, 0f, Space.Self);
+            }
+            else
+            {
+                planes[i].transform.Rotate(0f, 0f, direction, Space.Self);
+            }
+            Debug.Log(message:$"Plane altitude { altitude} and direction { direction}");
+
         }
+
+        return flightResponse;
     }
 
 }

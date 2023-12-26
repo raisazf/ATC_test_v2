@@ -4295,14 +4295,16 @@ struct HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2  : public Ru
 	HttpMethod_t9AB9E2BAC0D02F479F4624271A4F79E70221258E* ___method_1;
 	// System.Version System.Net.Http.HttpRequestMessage::version
 	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___version_2;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Object> System.Net.Http.HttpRequestMessage::properties
+	Dictionary_2_tA348003A3C1CEFB3096E9D2A0BC7F1AC8EC4F710* ___properties_3;
 	// System.Uri System.Net.Http.HttpRequestMessage::uri
-	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri_3;
+	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri_4;
 	// System.Boolean System.Net.Http.HttpRequestMessage::is_used
-	bool ___is_used_4;
+	bool ___is_used_5;
 	// System.Boolean System.Net.Http.HttpRequestMessage::disposed
-	bool ___disposed_5;
+	bool ___disposed_6;
 	// System.Net.Http.HttpContent System.Net.Http.HttpRequestMessage::<Content>k__BackingField
-	HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* ___U3CContentU3Ek__BackingField_6;
+	HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* ___U3CContentU3Ek__BackingField_7;
 };
 
 // System.Net.Http.HttpResponseMessage
@@ -4310,18 +4312,20 @@ struct HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970  : public R
 {
 	// System.Net.Http.Headers.HttpResponseHeaders System.Net.Http.HttpResponseMessage::headers
 	HttpResponseHeaders_tAD02F8CC2960BC561FEFD63E0121701743EAA7A8* ___headers_0;
+	// System.Net.Http.Headers.HttpResponseHeaders System.Net.Http.HttpResponseMessage::trailingHeaders
+	HttpResponseHeaders_tAD02F8CC2960BC561FEFD63E0121701743EAA7A8* ___trailingHeaders_1;
 	// System.String System.Net.Http.HttpResponseMessage::reasonPhrase
-	String_t* ___reasonPhrase_1;
+	String_t* ___reasonPhrase_2;
 	// System.Net.HttpStatusCode System.Net.Http.HttpResponseMessage::statusCode
-	int32_t ___statusCode_2;
+	int32_t ___statusCode_3;
 	// System.Version System.Net.Http.HttpResponseMessage::version
-	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___version_3;
+	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___version_4;
 	// System.Boolean System.Net.Http.HttpResponseMessage::disposed
-	bool ___disposed_4;
+	bool ___disposed_5;
 	// System.Net.Http.HttpContent System.Net.Http.HttpResponseMessage::<Content>k__BackingField
-	HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* ___U3CContentU3Ek__BackingField_5;
+	HttpContent_tD09737BB27CB151BC9688882F785208620211E1C* ___U3CContentU3Ek__BackingField_6;
 	// System.Net.Http.HttpRequestMessage System.Net.Http.HttpResponseMessage::<RequestMessage>k__BackingField
-	HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* ___U3CRequestMessageU3Ek__BackingField_6;
+	HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2* ___U3CRequestMessageU3Ek__BackingField_7;
 };
 
 // Oculus.Platform.Models.HttpTransferUpdate
@@ -30289,26 +30293,32 @@ struct GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F  : public MonoBehavi
 	String_t* ___endpoint_airport_6;
 	// System.String GetApiData::endpoint_flights
 	String_t* ___endpoint_flights_7;
-	// System.Single GetApiData::radius
-	float ___radius_8;
-	// System.Boolean GetApiData::isAirport
-	bool ___isAirport_9;
-	// airports GetApiData::AirpotsResponse
-	airports_tA14B57977CE40A655B12F0ACFCA13076122D21C7* ___AirpotsResponse_10;
-	// flights GetApiData::FlightResponse
-	flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* ___FlightResponse_11;
 	// UnityEngine.GameObject GetApiData::GlobalSystem
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___GlobalSystem_12;
-	// System.String GetApiData::newURL
-	String_t* ___newURL_13;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___GlobalSystem_8;
+	// UnityEngine.GameObject GetApiData::marker
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___marker_9;
+	// System.Single GetApiData::radius
+	float ___radius_10;
+	// System.Boolean GetApiData::isAirport
+	bool ___isAirport_11;
+	// airports GetApiData::AirpotsResponse
+	airports_tA14B57977CE40A655B12F0ACFCA13076122D21C7* ___AirpotsResponse_12;
+	// flights GetApiData::FlightResponse
+	flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* ___FlightResponse_13;
+	// UnityEngine.GameObject[] GetApiData::planes
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___planes_14;
 	// System.Single GetApiData::latitude
-	float ___latitude_14;
+	float ___latitude_15;
 	// System.Single GetApiData::longitude
-	float ___longitude_15;
+	float ___longitude_16;
 	// System.Single GetApiData::altitude
-	float ___altitude_16;
+	float ___altitude_17;
 	// System.Single GetApiData::direction
-	float ___direction_17;
+	float ___direction_18;
+	// RestSharp.RestResponse GetApiData::response
+	RestResponse_t1D39167CB052A264EC9A6241318FA1848ADACF0A* ___response_19;
+	// flights GetApiData::flightResponse
+	flights_t600D5E06CBC2053B30777FE4E1D9B40DAD9CFDBF* ___flightResponse_20;
 };
 
 // OculusSampleFramework.GrabManager
@@ -32126,16 +32136,18 @@ struct PassthroughSurface_t5DEF489C691B1678CA206E5B904FF22B8FCD4264  : public Mo
 // PlaneLocation
 struct PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// UnityEngine.Transform PlaneLocation::marker
-	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___marker_4;
 	// UnityEngine.GameObject PlaneLocation::parent
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___parent_5;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___parent_4;
 	// System.Single PlaneLocation::radius
-	float ___radius_6;
+	float ___radius_5;
 	// System.Single PlaneLocation::latitude
-	float ___latitude_7;
+	float ___latitude_6;
 	// System.Single PlaneLocation::longitude
-	float ___longitude_8;
+	float ___longitude_7;
+	// System.Single PlaneLocation::altitude
+	float ___altitude_8;
+	// System.Single PlaneLocation::direction
+	float ___direction_9;
 };
 
 // Oculus.Interaction.Body.Samples.PoseCaptureCountdown
@@ -39538,12 +39550,12 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9606[1] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9607[6] = 
 {
 	static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___airline_name_4)),static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___reg_number_5)),static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___lat_6)),static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___lng_7)),static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___alt_8)),static_cast<int32_t>(offsetof(FlightStatus_t962C0ACF30E3342C2A70232BFB4EBCDFF95A1E34, ___dir_9)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9608[14] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9608[17] = 
 {
-	static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___apiUrl_4)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___apiKey_5)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___endpoint_airport_6)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___endpoint_flights_7)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___radius_8)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___isAirport_9)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___AirpotsResponse_10)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___FlightResponse_11)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___GlobalSystem_12)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___newURL_13)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___latitude_14)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___longitude_15)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___altitude_16)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___direction_17)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9609[5] = 
+	static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___apiUrl_4)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___apiKey_5)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___endpoint_airport_6)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___endpoint_flights_7)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___GlobalSystem_8)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___marker_9)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___radius_10)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___isAirport_11)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___AirpotsResponse_12)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___FlightResponse_13)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___planes_14)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___latitude_15)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___longitude_16)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___altitude_17)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___direction_18)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___response_19)),static_cast<int32_t>(offsetof(GetApiData_t6C72D46D581FDC147EDD468BB6F4DE400CDD706F, ___flightResponse_20)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9609[6] = 
 {
-	static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___marker_4)),static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___parent_5)),static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___radius_6)),static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___latitude_7)),static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___longitude_8)),};
+	static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___parent_4)),static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___radius_5)),static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___latitude_6)),static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___longitude_7)),static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___altitude_8)),static_cast<int32_t>(offsetof(PlaneLocation_t031D467AF2D4EF1A015034F04A5465E127A93870, ___direction_9)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable9610[10] = 
 {
 	static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___radius_4)),static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___marker_5)),static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___marker2_6)),static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___earth_7)),static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___sphere_8)),static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___temp_lng_9)),static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___temp_lat_10)),static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___dir_11)),static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___alt_12)),static_cast<int32_t>(offsetof(testPosLatLong_t82AFC66316929FFB8DE5DA281C1DF2CAB7F1801B, ___Alt_13)),};
@@ -42364,12 +42376,12 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable10982[2] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable10983[8] = 
 {
 	static_cast<int32_t>(offsetof(HttpMethod_t9AB9E2BAC0D02F479F4624271A4F79E70221258E_StaticFields, ___delete_method_0)),static_cast<int32_t>(offsetof(HttpMethod_t9AB9E2BAC0D02F479F4624271A4F79E70221258E_StaticFields, ___get_method_1)),static_cast<int32_t>(offsetof(HttpMethod_t9AB9E2BAC0D02F479F4624271A4F79E70221258E_StaticFields, ___head_method_2)),static_cast<int32_t>(offsetof(HttpMethod_t9AB9E2BAC0D02F479F4624271A4F79E70221258E_StaticFields, ___options_method_3)),static_cast<int32_t>(offsetof(HttpMethod_t9AB9E2BAC0D02F479F4624271A4F79E70221258E_StaticFields, ___post_method_4)),static_cast<int32_t>(offsetof(HttpMethod_t9AB9E2BAC0D02F479F4624271A4F79E70221258E_StaticFields, ___put_method_5)),static_cast<int32_t>(offsetof(HttpMethod_t9AB9E2BAC0D02F479F4624271A4F79E70221258E_StaticFields, ___trace_method_6)),static_cast<int32_t>(offsetof(HttpMethod_t9AB9E2BAC0D02F479F4624271A4F79E70221258E, ___method_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable10985[7] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable10985[8] = 
 {
-	static_cast<int32_t>(offsetof(HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2, ___headers_0)),static_cast<int32_t>(offsetof(HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2, ___method_1)),static_cast<int32_t>(offsetof(HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2, ___version_2)),static_cast<int32_t>(offsetof(HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2, ___uri_3)),static_cast<int32_t>(offsetof(HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2, ___is_used_4)),static_cast<int32_t>(offsetof(HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2, ___disposed_5)),static_cast<int32_t>(offsetof(HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2, ___U3CContentU3Ek__BackingField_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable10986[7] = 
+	static_cast<int32_t>(offsetof(HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2, ___headers_0)),static_cast<int32_t>(offsetof(HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2, ___method_1)),static_cast<int32_t>(offsetof(HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2, ___version_2)),static_cast<int32_t>(offsetof(HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2, ___properties_3)),static_cast<int32_t>(offsetof(HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2, ___uri_4)),static_cast<int32_t>(offsetof(HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2, ___is_used_5)),static_cast<int32_t>(offsetof(HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2, ___disposed_6)),static_cast<int32_t>(offsetof(HttpRequestMessage_t74681B0588D722488483789091C3CF356C729DF2, ___U3CContentU3Ek__BackingField_7)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable10986[8] = 
 {
-	static_cast<int32_t>(offsetof(HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970, ___headers_0)),static_cast<int32_t>(offsetof(HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970, ___reasonPhrase_1)),static_cast<int32_t>(offsetof(HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970, ___statusCode_2)),static_cast<int32_t>(offsetof(HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970, ___version_3)),static_cast<int32_t>(offsetof(HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970, ___disposed_4)),static_cast<int32_t>(offsetof(HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970, ___U3CContentU3Ek__BackingField_5)),static_cast<int32_t>(offsetof(HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970, ___U3CRequestMessageU3Ek__BackingField_6)),};
+	static_cast<int32_t>(offsetof(HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970, ___headers_0)),static_cast<int32_t>(offsetof(HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970, ___trailingHeaders_1)),static_cast<int32_t>(offsetof(HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970, ___reasonPhrase_2)),static_cast<int32_t>(offsetof(HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970, ___statusCode_3)),static_cast<int32_t>(offsetof(HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970, ___version_4)),static_cast<int32_t>(offsetof(HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970, ___disposed_5)),static_cast<int32_t>(offsetof(HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970, ___U3CContentU3Ek__BackingField_6)),static_cast<int32_t>(offsetof(HttpResponseMessage_t5D2737606E4036A6E3E50FB0D651D3F76C61A970, ___U3CRequestMessageU3Ek__BackingField_7)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable10987[9] = 
 {
 	static_cast<int32_t>(offsetof(U3CSerializeToStreamAsyncU3Ed__8_t152F97E68C9D63079E3C3AC1567F25633133C0BD, ___U3CU3E1__state_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(U3CSerializeToStreamAsyncU3Ed__8_t152F97E68C9D63079E3C3AC1567F25633133C0BD, ___U3CU3Et__builder_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(U3CSerializeToStreamAsyncU3Ed__8_t152F97E68C9D63079E3C3AC1567F25633133C0BD, ___U3CU3E4__this_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(U3CSerializeToStreamAsyncU3Ed__8_t152F97E68C9D63079E3C3AC1567F25633133C0BD, ___stream_3)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(U3CSerializeToStreamAsyncU3Ed__8_t152F97E68C9D63079E3C3AC1567F25633133C0BD, ___context_4)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(U3CSerializeToStreamAsyncU3Ed__8_t152F97E68C9D63079E3C3AC1567F25633133C0BD, ___U3CsbU3E5__2_5)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(U3CSerializeToStreamAsyncU3Ed__8_t152F97E68C9D63079E3C3AC1567F25633133C0BD, ___U3CiU3E5__3_6)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(U3CSerializeToStreamAsyncU3Ed__8_t152F97E68C9D63079E3C3AC1567F25633133C0BD, ___U3CcU3E5__4_7)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(U3CSerializeToStreamAsyncU3Ed__8_t152F97E68C9D63079E3C3AC1567F25633133C0BD, ___U3CU3Eu__1_8)) + static_cast<int32_t>(sizeof(RuntimeObject)),};
