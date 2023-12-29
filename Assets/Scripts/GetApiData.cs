@@ -14,7 +14,7 @@ public class GetApiData : MonoBehaviour
     [SerializeField] public string endpoint_flights = "flights?flag=US,flight_iata=UA";
     [SerializeField] public GameObject GlobalSystem;
     [SerializeField] public GameObject marker;
-    [SerializeField] public float radius = 1.008f; // globe ball radius (unity units)
+    [SerializeField] public float radius = 1.0095f; // globe ball radius (unity units)
     [SerializeField] public bool isAirport = false;
     [SerializeField] public airports AirpotsResponse;
     [SerializeField] public flights FlightResponse;
@@ -47,7 +47,7 @@ public class GetApiData : MonoBehaviour
         //var client = new RestClient("https://airlabs.co/api/v9/flight?flight_iata=UA2029&api_key=a206d42c-783a-494c-a21b-86bfaccdd9fd");
         //var client = new RestClient("https://airlabs.co/api/v9/flights?view=array&_fields=hex,flag,lat,lng,dir,alt&api_key=a206d42c-783a-494c-a21b-86bfaccdd9fd");
         //var client = new RestClient("https://airlabs.co/api/v9/flights?fields=flag,lat,lng,dir,alt&api_key=a206d42c-783a-494c-a21b-86bfaccdd9fd&bbox=30,-90,37,-70");
-        var client = new RestClient("https://airlabs.co/api/v9/flights?airline_iata=UA&fields=reg_number,lat,lng,dir,alt&bbox=36,-80,40,-70&api_key=a206d42c-783a-494c-a21b-86bfaccdd9fd");
+        var client = new RestClient("https://airlabs.co/api/v9/flights?airline_iata=UA&fields=reg_number,lat,lng,dir,alt&bbox=36,-80,40,-65&api_key=a206d42c-783a-494c-a21b-86bfaccdd9fd");
 
         var request = new RestRequest();
 
